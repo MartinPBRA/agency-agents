@@ -39,6 +39,14 @@ These examples answer the question: *"What does it actually look like when the f
 
 **Key takeaway:** All 8 agents ran in parallel and produced coherent, cross-referencing plans without coordination overhead. The output demonstrates the agency's ability to go from "find an opportunity" to "here's the full blueprint" in a single session.
 
+### [interrogation-inflation-report.md](./interrogation-inflation-report.md)
+
+**What:** A single-agent deep interrogation showing the [Insight Interrogator](../marketing/marketing-insight-interrogator.md) cross-examining a real, competent-but-shallow internal report ("2025 CPC/CPM Inflation Report") before it goes client-facing.
+
+**The scenario:** A typical agency data report states *that* digital ad costs rose ~12–15.6% and recommends a 10–15% budget increase. It's accurate and readable — but it never challenges its own headline numbers. The Insight Interrogator runs it through the depth ladder, "numbers under oath," and an easy-answers pass to surface the deep, client-facing questions the report dodges.
+
+**Key takeaway:** Demonstrates the agent's core move — migrating a document's question mix from Rung 1–2 (*restate / clarify*) up to Rung 3–5 (*compare / cause / consequence*), e.g. reframing "ask for more budget" into "should we be re-pricing retainers and resetting KPIs?" Shows what a single specialist adds to content that already looks finished.
+
 ## Adding New Examples
 
 If you run an interesting multi-agent exercise, consider adding it here. Good examples show:
