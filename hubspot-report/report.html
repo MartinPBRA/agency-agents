@@ -1,0 +1,622 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>HubSpot Funnel Report — Organic vs Paid Search</title>
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: 'Segoe UI', system-ui, sans-serif; background: #f0f4f8; color: #1a202c; }
+
+  header {
+    background: linear-gradient(135deg, #1a365d 0%, #2b6cb0 100%);
+    color: white; padding: 32px 40px;
+  }
+  header h1 { font-size: 1.8rem; font-weight: 700; letter-spacing: -0.5px; }
+  header p { margin-top: 6px; opacity: 0.8; font-size: 0.9rem; }
+
+  .tabs {
+    display: flex; gap: 0; background: #1a365d;
+    padding: 0 40px; overflow-x: auto;
+  }
+  .tab-btn {
+    padding: 12px 24px; background: transparent; border: none;
+    color: rgba(255,255,255,0.65); cursor: pointer; font-size: 0.875rem;
+    font-weight: 500; border-bottom: 3px solid transparent;
+    white-space: nowrap; transition: all 0.2s;
+  }
+  .tab-btn:hover { color: white; }
+  .tab-btn.active { color: white; border-bottom-color: #63b3ed; }
+
+  .container { max-width: 1200px; margin: 0 auto; padding: 32px 24px; }
+
+  .tab-panel { display: none; }
+  .tab-panel.active { display: block; }
+
+  .kpi-grid {
+    display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 16px; margin-bottom: 32px;
+  }
+  .kpi-card {
+    background: white; border-radius: 12px; padding: 20px 24px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.08);
+    border-left: 4px solid #3182ce;
+  }
+  .kpi-card.organic { border-left-color: #38a169; }
+  .kpi-card.paid { border-left-color: #d69e2e; }
+  .kpi-card.neutral { border-left-color: #718096; }
+  .kpi-label { font-size: 0.75rem; font-weight: 600; text-transform: uppercase;
+    letter-spacing: 0.5px; color: #718096; }
+  .kpi-value { font-size: 2rem; font-weight: 700; margin-top: 4px; color: #1a202c; }
+  .kpi-sub { font-size: 0.8rem; color: #718096; margin-top: 4px; }
+
+  .charts-grid {
+    display: grid; grid-template-columns: repeat(auto-fit, minmax(480px, 1fr));
+    gap: 24px; margin-bottom: 32px;
+  }
+  .chart-card {
+    background: white; border-radius: 12px; padding: 24px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.08);
+  }
+  .chart-card h3 { font-size: 0.95rem; font-weight: 600; color: #2d3748; margin-bottom: 16px; }
+  .chart-card canvas { max-height: 300px; }
+
+  .chart-card.full-width { grid-column: 1 / -1; }
+
+  table { width: 100%; border-collapse: collapse; font-size: 0.875rem; }
+  thead th {
+    background: #edf2f7; padding: 10px 14px; text-align: left;
+    font-weight: 600; color: #4a5568; font-size: 0.78rem;
+    text-transform: uppercase; letter-spacing: 0.4px;
+  }
+  tbody tr { border-bottom: 1px solid #f0f0f0; }
+  tbody tr:hover { background: #fafafa; }
+  tbody td { padding: 10px 14px; }
+  .total-row td { font-weight: 700; background: #edf2f7; }
+  .highlight-green { color: #276749; font-weight: 600; }
+  .highlight-yellow { color: #7b341e; font-weight: 600; }
+
+  .section-title {
+    font-size: 1.1rem; font-weight: 700; color: #2d3748;
+    margin: 28px 0 16px; padding-bottom: 8px;
+    border-bottom: 2px solid #e2e8f0;
+  }
+
+  .badge {
+    display: inline-block; padding: 2px 8px; border-radius: 9999px;
+    font-size: 0.72rem; font-weight: 600;
+  }
+  .badge-green { background: #c6f6d5; color: #276749; }
+  .badge-yellow { background: #fefcbf; color: #7b341e; }
+  .badge-gray { background: #edf2f7; color: #4a5568; }
+
+  .compare-grid {
+    display: grid; grid-template-columns: 1fr 1fr; gap: 24px; margin-bottom: 28px;
+  }
+  .compare-card {
+    background: white; border-radius: 12px; padding: 24px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.08);
+  }
+  .compare-card h3 { font-size: 1rem; font-weight: 700; margin-bottom: 16px; }
+  .compare-card.organic h3 { color: #276749; }
+  .compare-card.paid h3 { color: #c05621; }
+  .funnel-step {
+    display: flex; align-items: center; justify-content: space-between;
+    padding: 10px 0; border-bottom: 1px solid #f0f0f0;
+  }
+  .funnel-step:last-child { border-bottom: none; }
+  .funnel-label { font-size: 0.85rem; color: #4a5568; }
+  .funnel-count { font-size: 1.4rem; font-weight: 700; }
+  .funnel-rate { font-size: 0.78rem; color: #718096; margin-top: 2px; }
+
+  @media (max-width: 640px) {
+    .compare-grid { grid-template-columns: 1fr; }
+    .charts-grid { grid-template-columns: 1fr; }
+    header { padding: 20px; }
+    .container { padding: 16px; }
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <h1>HubSpot Funnel Report</h1>
+  <p>Organic Search vs Paid Search · Lead → MQL → SQL · Sep 2025 – Jun 2026</p>
+</header>
+
+<nav class="tabs">
+  <button class="tab-btn active" onclick="showTab('overview')">Overview</button>
+  <button class="tab-btn" onclick="showTab('funnel')">Funnel by Source</button>
+  <button class="tab-btn" onclick="showTab('monthly')">Monthly Trends</button>
+  <button class="tab-btn" onclick="showTab('tables')">Full Data Tables</button>
+</nav>
+
+<!-- OVERVIEW TAB -->
+<div id="overview" class="tab-panel active">
+<div class="container">
+
+  <div class="kpi-grid">
+    <div class="kpi-card neutral">
+      <div class="kpi-label">Total Leads Created</div>
+      <div class="kpi-value">583</div>
+      <div class="kpi-sub">Sep 2025 – Jun 2026</div>
+    </div>
+    <div class="kpi-card neutral">
+      <div class="kpi-label">Total MQLs</div>
+      <div class="kpi-value">52</div>
+      <div class="kpi-sub">8.9% Lead→MQL rate</div>
+    </div>
+    <div class="kpi-card neutral">
+      <div class="kpi-label">Total SQLs</div>
+      <div class="kpi-value">23</div>
+      <div class="kpi-sub">3.9% Lead→SQL rate</div>
+    </div>
+    <div class="kpi-card organic">
+      <div class="kpi-label">Organic Search Leads</div>
+      <div class="kpi-value">67</div>
+      <div class="kpi-sub">14.9% MQL rate · 7.5% SQL rate</div>
+    </div>
+    <div class="kpi-card paid">
+      <div class="kpi-label">Paid Search Leads</div>
+      <div class="kpi-value">41</div>
+      <div class="kpi-sub">36.6% MQL rate · 19.5% SQL rate</div>
+    </div>
+  </div>
+
+  <div class="charts-grid">
+    <div class="chart-card">
+      <h3>Leads Created by Source (All Time)</h3>
+      <canvas id="leadsBySourceChart"></canvas>
+    </div>
+    <div class="chart-card">
+      <h3>Organic vs Paid Search — Full Funnel</h3>
+      <canvas id="funnelCompareChart"></canvas>
+    </div>
+    <div class="chart-card full-width">
+      <h3>Conversion Rates: All Sources (Lead→MQL & Lead→SQL)</h3>
+      <canvas id="conversionRatesChart"></canvas>
+    </div>
+  </div>
+
+</div>
+</div>
+
+<!-- FUNNEL TAB -->
+<div id="funnel" class="tab-panel">
+<div class="container">
+
+  <div class="compare-grid">
+    <div class="compare-card organic">
+      <h3>🌿 Organic Search</h3>
+      <div class="funnel-step">
+        <div>
+          <div class="funnel-label">Leads Created</div>
+        </div>
+        <div style="text-align:right">
+          <div class="funnel-count" style="color:#276749">67</div>
+          <div class="funnel-rate">baseline</div>
+        </div>
+      </div>
+      <div class="funnel-step">
+        <div>
+          <div class="funnel-label">MQLs</div>
+        </div>
+        <div style="text-align:right">
+          <div class="funnel-count" style="color:#2f855a">10</div>
+          <div class="funnel-rate">14.9% of Leads</div>
+        </div>
+      </div>
+      <div class="funnel-step">
+        <div>
+          <div class="funnel-label">SQLs</div>
+        </div>
+        <div style="text-align:right">
+          <div class="funnel-count" style="color:#276749">5</div>
+          <div class="funnel-rate">7.5% of Leads · 50.0% of MQLs</div>
+        </div>
+      </div>
+    </div>
+    <div class="compare-card paid">
+      <h3>💰 Paid Search</h3>
+      <div class="funnel-step">
+        <div>
+          <div class="funnel-label">Leads Created</div>
+        </div>
+        <div style="text-align:right">
+          <div class="funnel-count" style="color:#c05621">41</div>
+          <div class="funnel-rate">baseline</div>
+        </div>
+      </div>
+      <div class="funnel-step">
+        <div>
+          <div class="funnel-label">MQLs</div>
+        </div>
+        <div style="text-align:right">
+          <div class="funnel-count" style="color:#dd6b20">15</div>
+          <div class="funnel-rate">36.6% of Leads ↑ vs Organic</div>
+        </div>
+      </div>
+      <div class="funnel-step">
+        <div>
+          <div class="funnel-label">SQLs</div>
+        </div>
+        <div style="text-align:right">
+          <div class="funnel-count" style="color:#c05621">8</div>
+          <div class="funnel-rate">19.5% of Leads · 53.3% of MQLs</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="section-title">Full Funnel by All Sources</div>
+  <div class="chart-card" style="margin-bottom:24px">
+    <canvas id="allSourceFunnelChart" style="max-height:360px"></canvas>
+  </div>
+
+  <div class="chart-card">
+    <h3>Conversion Rate Comparison — All Sources</h3>
+    <table>
+      <thead>
+        <tr>
+          <th>Source</th>
+          <th>Leads</th>
+          <th>MQLs</th>
+          <th>SQLs</th>
+          <th>Lead→MQL</th>
+          <th>Lead→SQL</th>
+          <th>MQL→SQL</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><span class="badge badge-green">Organic Search</span></td>
+          <td>67</td><td>10</td><td>5</td>
+          <td>14.9%</td><td>7.5%</td><td>50.0%</td>
+        </tr>
+        <tr>
+          <td><span class="badge badge-yellow">Paid Search</span></td>
+          <td>41</td><td>15</td><td>8</td>
+          <td class="highlight-green">36.6%</td>
+          <td class="highlight-green">19.5%</td>
+          <td>53.3%</td>
+        </tr>
+        <tr>
+          <td><span class="badge badge-gray">Direct Traffic</span></td>
+          <td>87</td><td>9</td><td>1</td>
+          <td>10.3%</td><td>1.1%</td><td>11.1%</td>
+        </tr>
+        <tr>
+          <td><span class="badge badge-gray">Offline Sources</span></td>
+          <td>347</td><td>7</td><td>7</td>
+          <td>2.0%</td><td>2.0%</td><td>100.0%</td>
+        </tr>
+        <tr>
+          <td><span class="badge badge-gray">Paid Social</span></td>
+          <td>21</td><td>5</td><td>0</td>
+          <td>23.8%</td><td>0.0%</td><td>0.0%</td>
+        </tr>
+        <tr>
+          <td><span class="badge badge-gray">Referrals</span></td>
+          <td>12</td><td>5</td><td>2</td>
+          <td>41.7%</td><td>16.7%</td><td>40.0%</td>
+        </tr>
+        <tr>
+          <td><span class="badge badge-gray">AI Referrals</span></td>
+          <td>6</td><td>1</td><td>0</td>
+          <td>16.7%</td><td>0.0%</td><td>0.0%</td>
+        </tr>
+        <tr>
+          <td><span class="badge badge-gray">Organic Social</span></td>
+          <td>2</td><td>0</td><td>0</td>
+          <td>0.0%</td><td>0.0%</td><td>—</td>
+        </tr>
+        <tr class="total-row">
+          <td>TOTAL</td>
+          <td>583</td><td>52</td><td>23</td>
+          <td>8.9%</td><td>3.9%</td><td>44.2%</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+</div>
+</div>
+
+<!-- MONTHLY TRENDS TAB -->
+<div id="monthly" class="tab-panel">
+<div class="container">
+
+  <div class="charts-grid">
+    <div class="chart-card full-width">
+      <h3>Monthly Leads Created — Organic Search vs Paid Search</h3>
+      <canvas id="monthlyLeadsChart" style="max-height:280px"></canvas>
+    </div>
+    <div class="chart-card full-width">
+      <h3>Monthly MQLs — Organic Search vs Paid Search</h3>
+      <canvas id="monthlyMQLChart" style="max-height:260px"></canvas>
+    </div>
+    <div class="chart-card full-width">
+      <h3>Monthly SQLs — Organic Search vs Paid Search</h3>
+      <canvas id="monthlySQLChart" style="max-height:260px"></canvas>
+    </div>
+    <div class="chart-card full-width">
+      <h3>Monthly Lead→MQL Conversion Rate — Organic vs Paid</h3>
+      <canvas id="monthlyConvChart" style="max-height:260px"></canvas>
+    </div>
+  </div>
+
+</div>
+</div>
+
+<!-- TABLES TAB -->
+<div id="tables" class="tab-panel">
+<div class="container">
+
+  <div class="section-title">Leads Created by Month & Source</div>
+  <div class="chart-card" style="overflow-x:auto; margin-bottom:28px">
+    <table>
+      <thead>
+        <tr>
+          <th>Month</th><th>Organic Search</th><th>Paid Search</th>
+          <th>Direct Traffic</th><th>Offline Sources</th><th>Paid Social</th>
+          <th>AI Referrals</th><th>Referrals</th><th>Organic Social</th><th>Total</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr><td>Sep 2025</td><td>5</td><td>6</td><td>6</td><td>107</td><td>—</td><td>1</td><td>—</td><td>—</td><td>125</td></tr>
+        <tr><td>Oct 2025</td><td>7</td><td>8</td><td>15</td><td>130</td><td>—</td><td>1</td><td>—</td><td>—</td><td>161</td></tr>
+        <tr><td>Nov 2025</td><td>7</td><td>3</td><td>12</td><td>24</td><td>—</td><td>—</td><td>—</td><td>—</td><td>46</td></tr>
+        <tr><td>Dec 2025</td><td>8</td><td>3</td><td>6</td><td>12</td><td>4</td><td>1</td><td>1</td><td>—</td><td>35</td></tr>
+        <tr><td>Jan 2026</td><td>9</td><td>6</td><td>11</td><td>24</td><td>—</td><td>3</td><td>5</td><td>—</td><td>58</td></tr>
+        <tr><td>Feb 2026</td><td>8</td><td>6</td><td>15</td><td>8</td><td>3</td><td>—</td><td>—</td><td>1</td><td>41</td></tr>
+        <tr><td>Mar 2026</td><td>4</td><td>4</td><td>6</td><td>20</td><td>1</td><td>—</td><td>—</td><td>—</td><td>35</td></tr>
+        <tr><td>Apr 2026</td><td>8</td><td>—</td><td>7</td><td>10</td><td>3</td><td>—</td><td>3</td><td>1</td><td>32</td></tr>
+        <tr><td>May 2026</td><td>8</td><td>1</td><td>5</td><td>9</td><td>9</td><td>—</td><td>2</td><td>—</td><td>34</td></tr>
+        <tr><td>Jun 2026</td><td>3</td><td>4</td><td>4</td><td>3</td><td>1</td><td>—</td><td>1</td><td>—</td><td>16</td></tr>
+        <tr class="total-row"><td>TOTAL</td><td>67</td><td>41</td><td>87</td><td>347</td><td>21</td><td>6</td><td>12</td><td>2</td><td>583</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="section-title">MQLs by Month & Source</div>
+  <div class="chart-card" style="overflow-x:auto; margin-bottom:28px">
+    <table>
+      <thead>
+        <tr>
+          <th>Month</th><th>Organic Search</th><th>Paid Search</th>
+          <th>Direct Traffic</th><th>Offline Sources</th><th>Paid Social</th>
+          <th>AI Referrals</th><th>Referrals</th><th>Total</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr><td>Sep 2025</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td></tr>
+        <tr><td>Oct 2025</td><td>1</td><td>2</td><td>2</td><td>—</td><td>—</td><td>—</td><td>—</td><td>5</td></tr>
+        <tr><td>Nov 2025</td><td>1</td><td>1</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>2</td></tr>
+        <tr><td>Dec 2025</td><td>2</td><td>2</td><td>—</td><td>1</td><td>—</td><td>—</td><td>—</td><td>5</td></tr>
+        <tr><td>Jan 2026</td><td>—</td><td>4</td><td>1</td><td>2</td><td>—</td><td>1</td><td>1</td><td>9</td></tr>
+        <tr><td>Feb 2026</td><td>—</td><td>1</td><td>—</td><td>1</td><td>—</td><td>—</td><td>—</td><td>2</td></tr>
+        <tr><td>Mar 2026</td><td>—</td><td>1</td><td>4</td><td>1</td><td>1</td><td>—</td><td>—</td><td>7</td></tr>
+        <tr><td>Apr 2026</td><td>1</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>2</td><td>3</td></tr>
+        <tr><td>May 2026</td><td>5</td><td>1</td><td>2</td><td>—</td><td>2</td><td>—</td><td>1</td><td>11</td></tr>
+        <tr><td>Jun 2026</td><td>—</td><td>3</td><td>—</td><td>2</td><td>2</td><td>—</td><td>1</td><td>8</td></tr>
+        <tr class="total-row"><td>TOTAL</td><td>10</td><td>15</td><td>9</td><td>7</td><td>5</td><td>1</td><td>5</td><td>52</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="section-title">SQLs by Month & Source</div>
+  <div class="chart-card" style="overflow-x:auto; margin-bottom:28px">
+    <table>
+      <thead>
+        <tr>
+          <th>Month</th><th>Organic Search</th><th>Paid Search</th>
+          <th>Direct Traffic</th><th>Offline Sources</th><th>Referrals</th><th>Total</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr><td>Sep 2025</td><td>—</td><td>1</td><td>—</td><td>2</td><td>—</td><td>3</td></tr>
+        <tr><td>Oct 2025</td><td>—</td><td>1</td><td>—</td><td>—</td><td>—</td><td>1</td></tr>
+        <tr><td>Nov 2025</td><td>1</td><td>1</td><td>—</td><td>1</td><td>—</td><td>3</td></tr>
+        <tr><td>Dec 2025</td><td>2</td><td>1</td><td>—</td><td>2</td><td>—</td><td>5</td></tr>
+        <tr><td>Jan 2026</td><td>—</td><td>2</td><td>1</td><td>1</td><td>1</td><td>5</td></tr>
+        <tr><td>Feb 2026</td><td>—</td><td>1</td><td>—</td><td>—</td><td>—</td><td>1</td></tr>
+        <tr><td>Mar 2026</td><td>—</td><td>1</td><td>—</td><td>—</td><td>—</td><td>1</td></tr>
+        <tr><td>Apr 2026</td><td>—</td><td>—</td><td>—</td><td>—</td><td>1</td><td>1</td></tr>
+        <tr><td>May 2026</td><td>2</td><td>—</td><td>—</td><td>—</td><td>—</td><td>2</td></tr>
+        <tr><td>Jun 2026</td><td>—</td><td>—</td><td>—</td><td>1</td><td>—</td><td>1</td></tr>
+        <tr class="total-row"><td>TOTAL</td><td>5</td><td>8</td><td>1</td><td>7</td><td>2</td><td>23</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+</div>
+</div>
+
+<script>
+const months = ['Sep 25','Oct 25','Nov 25','Dec 25','Jan 26','Feb 26','Mar 26','Apr 26','May 26','Jun 26'];
+
+const data = {
+  leads: {
+    organic: [5,7,7,8,9,8,4,8,8,3],
+    paid:    [6,8,3,3,6,6,4,0,1,4],
+    direct:  [6,15,12,6,11,15,6,7,5,4],
+    offline: [107,130,24,12,24,8,20,10,9,3],
+    paidSocial:[0,0,0,4,0,3,1,3,9,1],
+    aiRef:   [1,1,0,1,3,0,0,0,0,0],
+    ref:     [0,0,0,1,5,0,0,3,2,1],
+  },
+  mql: {
+    organic: [0,1,1,2,0,0,0,1,5,0],
+    paid:    [0,2,1,2,4,1,1,0,1,3],
+    direct:  [0,2,0,0,1,0,4,0,2,0],
+    offline: [0,0,0,1,2,1,1,0,0,2],
+    paidSocial:[0,0,0,0,0,0,1,0,2,2],
+    aiRef:   [0,0,0,0,1,0,0,0,0,0],
+    ref:     [0,0,0,0,1,0,0,2,1,1],
+  },
+  sql: {
+    organic: [0,0,1,2,0,0,0,0,2,0],
+    paid:    [1,1,1,1,2,1,1,0,0,0],
+    direct:  [0,0,0,0,1,0,0,0,0,0],
+    offline: [2,0,1,2,1,0,0,0,0,1],
+    ref:     [0,0,0,0,1,0,0,1,0,0],
+  }
+};
+
+const GREEN = '#38a169';
+const GREEN_LIGHT = 'rgba(56,161,105,0.15)';
+const YELLOW = '#d69e2e';
+const YELLOW_LIGHT = 'rgba(214,158,46,0.15)';
+const BLUE = '#3182ce';
+const PURPLE = '#805ad5';
+const GRAY = '#a0aec0';
+
+// Chart 1: Leads by source (donut)
+new Chart(document.getElementById('leadsBySourceChart'), {
+  type: 'doughnut',
+  data: {
+    labels: ['Offline Sources','Direct Traffic','Organic Search','Paid Search','Paid Social','Referrals','AI Referrals','Organic Social'],
+    datasets: [{
+      data: [347,87,67,41,21,12,6,2],
+      backgroundColor: ['#718096','#4299e1',GREEN,YELLOW,'#ed8936','#9f7aea','#fc8181','#68d391'],
+      borderWidth: 2, borderColor: 'white'
+    }]
+  },
+  options: {
+    plugins: { legend: { position: 'right', labels: { font: { size: 11 }, boxWidth: 12 } } },
+    cutout: '60%'
+  }
+});
+
+// Chart 2: Funnel compare grouped bar
+new Chart(document.getElementById('funnelCompareChart'), {
+  type: 'bar',
+  data: {
+    labels: ['Leads','MQLs','SQLs'],
+    datasets: [
+      { label: 'Organic Search', data: [67,10,5], backgroundColor: GREEN, borderRadius: 6 },
+      { label: 'Paid Search',    data: [41,15,8], backgroundColor: YELLOW, borderRadius: 6 }
+    ]
+  },
+  options: {
+    plugins: { legend: { position: 'top' } },
+    scales: { y: { beginAtZero: true, grid: { color: '#f0f0f0' } }, x: { grid: { display: false } } }
+  }
+});
+
+// Chart 3: Conversion rates all sources
+new Chart(document.getElementById('conversionRatesChart'), {
+  type: 'bar',
+  data: {
+    labels: ['Organic\nSearch','Paid\nSearch','Direct\nTraffic','Offline\nSources','Paid\nSocial','Referrals','AI\nReferrals'],
+    datasets: [
+      { label: 'Lead→MQL %', data: [14.9,36.6,10.3,2.0,23.8,41.7,16.7], backgroundColor: BLUE, borderRadius: 4 },
+      { label: 'Lead→SQL %', data: [7.5,19.5,1.1,2.0,0.0,16.7,0.0], backgroundColor: PURPLE, borderRadius: 4 }
+    ]
+  },
+  options: {
+    plugins: { legend: { position: 'top' } },
+    scales: {
+      y: { beginAtZero: true, ticks: { callback: v => v+'%' }, grid: { color: '#f0f0f0' } },
+      x: { grid: { display: false } }
+    }
+  }
+});
+
+// Chart 4: All source funnel grouped bar
+new Chart(document.getElementById('allSourceFunnelChart'), {
+  type: 'bar',
+  data: {
+    labels: ['Offline Sources','Direct Traffic','Organic Search','Paid Search','Paid Social','Referrals','AI Referrals'],
+    datasets: [
+      { label: 'Leads', data: [347,87,67,41,21,12,6], backgroundColor: 'rgba(49,130,206,0.7)', borderRadius: 4 },
+      { label: 'MQLs',  data: [7,9,10,15,5,5,1], backgroundColor: 'rgba(56,161,105,0.8)', borderRadius: 4 },
+      { label: 'SQLs',  data: [7,1,5,8,0,2,0], backgroundColor: 'rgba(128,90,213,0.8)', borderRadius: 4 }
+    ]
+  },
+  options: {
+    plugins: { legend: { position: 'top' } },
+    scales: { y: { beginAtZero: true, grid: { color: '#f0f0f0' } }, x: { grid: { display: false } } }
+  }
+});
+
+// Chart 5: Monthly leads
+new Chart(document.getElementById('monthlyLeadsChart'), {
+  type: 'line',
+  data: {
+    labels: months,
+    datasets: [
+      { label: 'Organic Search', data: data.leads.organic, borderColor: GREEN, backgroundColor: GREEN_LIGHT, fill: true, tension: 0.3, pointRadius: 5 },
+      { label: 'Paid Search', data: data.leads.paid, borderColor: YELLOW, backgroundColor: YELLOW_LIGHT, fill: true, tension: 0.3, pointRadius: 5 }
+    ]
+  },
+  options: {
+    plugins: { legend: { position: 'top' } },
+    scales: { y: { beginAtZero: true, grid: { color: '#f0f0f0' } }, x: { grid: { display: false } } }
+  }
+});
+
+// Chart 6: Monthly MQLs
+new Chart(document.getElementById('monthlyMQLChart'), {
+  type: 'bar',
+  data: {
+    labels: months,
+    datasets: [
+      { label: 'Organic Search', data: data.mql.organic, backgroundColor: GREEN, borderRadius: 4 },
+      { label: 'Paid Search', data: data.mql.paid, backgroundColor: YELLOW, borderRadius: 4 }
+    ]
+  },
+  options: {
+    plugins: { legend: { position: 'top' } },
+    scales: { y: { beginAtZero: true, grid: { color: '#f0f0f0' } }, x: { grid: { display: false } } }
+  }
+});
+
+// Chart 7: Monthly SQLs
+new Chart(document.getElementById('monthlySQLChart'), {
+  type: 'bar',
+  data: {
+    labels: months,
+    datasets: [
+      { label: 'Organic Search', data: data.sql.organic, backgroundColor: GREEN, borderRadius: 4 },
+      { label: 'Paid Search', data: data.sql.paid, backgroundColor: YELLOW, borderRadius: 4 }
+    ]
+  },
+  options: {
+    plugins: { legend: { position: 'top' } },
+    scales: { y: { beginAtZero: true, grid: { color: '#f0f0f0' } }, x: { grid: { display: false } } }
+  }
+});
+
+// Chart 8: Monthly conversion rates
+const orgConvRate = months.map((_, i) => data.leads.organic[i] > 0 ? +(data.mql.organic[i]/data.leads.organic[i]*100).toFixed(1) : null);
+const paidConvRate = months.map((_, i) => data.leads.paid[i] > 0 ? +(data.mql.paid[i]/data.leads.paid[i]*100).toFixed(1) : null);
+
+new Chart(document.getElementById('monthlyConvChart'), {
+  type: 'line',
+  data: {
+    labels: months,
+    datasets: [
+      { label: 'Organic Search Lead→MQL %', data: orgConvRate, borderColor: GREEN, backgroundColor: GREEN_LIGHT, fill: false, tension: 0.3, pointRadius: 5, spanGaps: true },
+      { label: 'Paid Search Lead→MQL %', data: paidConvRate, borderColor: YELLOW, backgroundColor: YELLOW_LIGHT, fill: false, tension: 0.3, pointRadius: 5, spanGaps: true }
+    ]
+  },
+  options: {
+    plugins: { legend: { position: 'top' } },
+    scales: {
+      y: { beginAtZero: true, ticks: { callback: v => v+'%' }, grid: { color: '#f0f0f0' } },
+      x: { grid: { display: false } }
+    }
+  }
+});
+
+function showTab(id) {
+  document.querySelectorAll('.tab-panel').forEach(p => p.classList.remove('active'));
+  document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
+  document.getElementById(id).classList.add('active');
+  event.target.classList.add('active');
+}
+</script>
+</body>
+</html>
