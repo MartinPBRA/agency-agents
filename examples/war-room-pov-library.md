@@ -13,12 +13,47 @@
 ---
 
 ## House Voice
-- **Opinionated, but evidence-first** — always take a side, then back it with a real example.
-- **Human-expertise-forward** — AI amplifies judgment; it doesn't lead the decision.
-- **Anti-hype, anti-cliché** — name the wallpaper take, then say it better.
-- **Business-outcome oriented** — revenue and incremental value over vanity metrics.
-- **Grounded in the work** — hands-on multi-platform buying (Google, Meta, TikTok, DV360) is the credibility.
-- **Regional edge** — Canadian and San Francisco markets; speak to both a Canadian agency perspective and the SF/Bay Area tech-and-growth audience.
+The team's answers have a consistent, recognizable style. These traits are the **voice DNA** — they stay constant no matter who is quoted or what new answers come in. Every piece of War Room content should carry them.
+
+### 1. The core move — the antithesis reframe ("not X — Y")
+This is the signature. Nearly every strong take lands as a two-part contrast: name the wrong belief, then flip to the right one.
+- "AI should **amplify** human expertise — **not replace** it."
+- "Recommendations should **inform** decisions — **not make** them."
+- "Programmatic isn't about **replacing** marketers — it's about giving them **better tools at scale**."
+- "Paid media doesn't **create** value — it **amplifies** what's already there."
+- "Great marketing **scales** success — it doesn't **create** it."
+- "The goal isn't to be **everywhere** — it's to be where you have the **most impact**."
+- "The goal isn't to **cut** spend — it's to **reallocate** it."
+
+→ When drafting, find the antithesis first. If a take has no "not X, but Y," it isn't sharp yet.
+
+### 2. Concession, then pivot
+Earn the contrarian take by granting what's true, then turning. *"I use AI every day… **but** I don't let it lead."* This makes the POV read as judgment, not contrarianism for its own sake.
+→ Structure: *[genuine concession] → but → [the sharper truth].*
+
+### 3. Show the receipts (name the platform)
+Abstract claims get concrete, named proof: *"**Meta** suggests creative that doesn't fit the brand." "**TikTok** recommended pausing a campaign that was performing exactly as intended."* Specificity is the credibility.
+→ Never write "platforms sometimes…" when you can write "Meta did X."
+
+### 4. Measured, first-person confidence
+Write "I think," "I believe," "I'd describe it differently." Confident, not chest-thumping — the authority comes from the practitioner's chair (hands on Google, Meta, TikTok, DV360), not from volume.
+→ Own the take in first person. Earned confidence, never arrogance.
+
+### 5. Rhythm — short declaratives + triads
+Punchy one-line statements, often followed by a rule-of-three list (*"understand the business, challenge assumptions, interpret the data in context"*), then a crisp closing line that restates the antithesis.
+→ Vary sentence length. End on a short, quotable line.
+
+### 6. Signature devices to reuse
+- **The warning label** — *"This should come with a warning label: '…'."* (for platform / best-practice critiques)
+- **The uncomfortable truth** — *"One uncomfortable truth is…"* (strong hook opener)
+- **The wallpaper take** — call out the cliché everyone repeats, then say it better.
+
+### 7. Lexicon
+- **Use:** amplify · incremental value · business context · reallocate (not cut) · at scale · the fundamentals · judgment · ROAS target · what actually works · exposes the problem · scales success.
+- **Avoid:** synergy · game-changer · revolutionary · "leverage" as filler · hype adjectives · vanity metrics framed as wins · any phrasing that makes AI the decision-maker.
+
+### 8. Market lens
+Canadian agency perspective + SF / Bay Area tech-and-growth audience. Tailor examples to both; never assume a single-market reader.
 
 ---
 
@@ -88,9 +123,32 @@ Each POV is written as a one-sentence take strong enough to disagree with, plus 
 
 ---
 
-## Voice: Do / Don't
-**Do:** take a side · name the platform · cite a real example · speak to revenue and incremental value · reframe clichés instead of repeating them.
-**Don't:** position AI as the decision-maker · chase vanity metrics · give "be everywhere" advice · reprint platform announcements without a POV · publish an opinion with no proof.
+## Voice Rubric — score every draft
+A draft is "in voice" when it hits **at least 4 of 5**:
+1. ☐ Has a clear **antithesis** ("not X — Y")
+2. ☐ **Concedes** something true before the turn
+3. ☐ Names a **specific platform / real example** (a receipt)
+4. ☐ Speaks to a **business outcome**, not a vanity metric
+5. ☐ Ends on a **short, quotable line**
+
+Fewer than 3 → not in voice yet. Sharpen it.
+
+**Quick Do / Don't:**
+- **Do:** take a side · name the platform · cite a real example · speak to revenue and incremental value · reframe clichés instead of repeating them.
+- **Don't:** position AI as the decision-maker · chase vanity metrics · give "be everywhere" advice · reprint platform announcements without a POV · publish an opinion with no proof.
+
+---
+
+## Converting new survey answers into this voice
+Use this every time a new response comes in — it keeps the respondent's real opinion but sharpens the structure to match the house voice:
+1. **Find the tension** — what belief is the respondent pushing against?
+2. **Write the antithesis** — restate it as "not X — Y."
+3. **Add the concession** — grant what's true first, then pivot ("I use AI every day, but…").
+4. **Attach a receipt** — a named platform, a real example, or a proof point from the library.
+5. **Close on the sharp half** — end on the strongest side of the antithesis as a quotable line.
+6. **Run the rubric** — 4 of 5 or keep sharpening.
+
+*Change only the sharpness and structure — never invent an opinion the respondent didn't express.*
 
 ---
 
