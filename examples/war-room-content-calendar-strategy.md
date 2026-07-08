@@ -21,7 +21,7 @@ The raw survey returned short answers. On their own they're *topics*, not *takes
 | Most common client/prospect questions | How do we measure DOOH? Team capacity? Case studies? How do we manage client relationships? |
 | Strongest opinion | "Evolving with AI" |
 | Wins / learnings to mine | SkiBig3 BigQuery work; BC Parks case study |
-| Team members with strong insight | Kevan, Kirstie, Vanessa |
+| Team members with strong insight | Measurement Lead, Programmatic Ops Lead, AI Lead |
 | Events we're at (next 6 mo) | The Gathering (speaking, with SkiBig3) |
 | Events we should attend | INBOUND, CMO Alliance; explore more Canadian events |
 | Sources followed | Neil Patel, Google Trends |
@@ -75,13 +75,13 @@ Four pillars cover everything the team surfaced, with built-in novelty to honor 
 
 | Pillar | Primary Voice | Why |
 |---|---|---|
-| DOOH, Demystified | Kevan | Named for measurement/technical depth |
-| Programmatic in Practice | Kirstie | Named for operational/capacity insight |
-| AI, For Real | Vanessa | Named for forward/AI perspective |
+| DOOH, Demystified | Measurement Lead | Named for measurement/technical depth |
+| Programmatic in Practice | Programmatic Ops Lead | Named for operational/capacity insight |
+| AI, For Real | AI Lead | Named for forward/AI perspective |
 | Proof & Partnership | Rotating client lead (paired w/ SkiBig3) | Wins carry the relationship story |
-| Paid Media Truths | Victor | Deep, quotable POVs (R2) — technical/opinion content, not client-relationship content |
+| Paid Media Truths | Performance Lead | Deep, quotable POVs (R2) — technical/opinion content, not client-relationship content |
 
-*(Roles are inferred from the survey's "strong insights" answers — confirm before publishing. Victor noted he is operational, not client-facing, so client-relationship content should route to an AM.)*
+*(Roles are inferred from the survey's "strong insights" answers — confirm before publishing. The performance role is operational, not client-facing, so client-relationship content should route to an AM.)*
 
 ---
 
@@ -91,33 +91,33 @@ Sequenced to build authority ahead of **The Gathering** (speaking, with SkiBig3)
 
 | Week | Pillar | Format | Working Title / POV | Owner | Proof Point | Tied Event |
 |------|--------|--------|---------------------|-------|-------------|------------|
-| 1 | DOOH | LinkedIn article | "Your DOOH report is a guess with a logo on it" | Kevan | DOOH framework | — |
-| 2 | AI, For Real | LinkedIn post + carousel | "AI won't replace your media team — here's what it actually does" | Vanessa | BigQuery workflow | — |
-| 3 | Proof & Partnership | Case study | "How we cut SkiBig3's reporting time with BigQuery" | Kirstie | SkiBig3 | The Gathering pre-promo |
-| 4 | Programmatic | Explainer post | "What 'team capacity' really means at a programmatic agency" | Kirstie | Internal | — |
-| 5 | Proof & Partnership | Case study | "BC Parks: measuring DOOH against real outcomes" | Kevan | BC Parks | — |
-| 6 | DOOH | Newsletter | "The 3 DOOH metrics that actually matter" | Kevan | Framework | — |
-| 7 | AI, For Real | Podcast/panel abstract | "AI in media ops: hype vs. the work" | Vanessa | Workflow | Speaker pitch: INBOUND |
-| 8 | Programmatic | Behind-the-scenes | "How we manage client relationships at scale" | Kirstie | Internal | — |
-| 9 | Proof & Partnership | The Gathering recap | "What we shared on stage with SkiBig3" | Kirstie | SkiBig3 | The Gathering (live) |
-| 10 | DOOH | LinkedIn article | "Programmatic DOOH: the buyer's measurement checklist" | Kevan | Framework | CMO Alliance pitch |
-| 11 | AI, For Real | Carousel | "5 things we automated so strategists could strategize" | Vanessa | BigQuery | — |
+| 1 | DOOH | LinkedIn article | "Your DOOH report is a guess with a logo on it" | Measurement Lead | DOOH framework | — |
+| 2 | AI, For Real | LinkedIn post + carousel | "AI won't replace your media team — here's what it actually does" | AI Lead | BigQuery workflow | — |
+| 3 | Proof & Partnership | Case study | "How we cut SkiBig3's reporting time with BigQuery" | Programmatic Ops Lead | SkiBig3 | The Gathering pre-promo |
+| 4 | Programmatic | Explainer post | "What 'team capacity' really means at a programmatic agency" | Programmatic Ops Lead | Internal | — |
+| 5 | Proof & Partnership | Case study | "BC Parks: measuring DOOH against real outcomes" | Measurement Lead | BC Parks | — |
+| 6 | DOOH | Newsletter | "The 3 DOOH metrics that actually matter" | Measurement Lead | Framework | — |
+| 7 | AI, For Real | Podcast/panel abstract | "AI in media ops: hype vs. the work" | AI Lead | Workflow | Speaker pitch: INBOUND |
+| 8 | Programmatic | Behind-the-scenes | "How we manage client relationships at scale" | Programmatic Ops Lead | Internal | — |
+| 9 | Proof & Partnership | The Gathering recap | "What we shared on stage with SkiBig3" | Programmatic Ops Lead | SkiBig3 | The Gathering (live) |
+| 10 | DOOH | LinkedIn article | "Programmatic DOOH: the buyer's measurement checklist" | Measurement Lead | Framework | CMO Alliance pitch |
+| 11 | AI, For Real | Carousel | "5 things we automated so strategists could strategize" | AI Lead | BigQuery | — |
 | 12 | Programmatic | Quarter wrap | "What we learned running [n] campaigns this quarter" | Team | Internal | — |
 
 ---
 
 ## 5b. Round 2 — Deep-POV Clusters (Paid Media Truths)
 
-These come straight from Victor's deep responses and are the strongest ready-to-ship, quotable content. Drop them into open calendar slots; each is high-hook and needs no external research. Full takes and proof in the [POV Library](war-room-pov-library.md).
+These come straight from the Round 2 deep responses and are the strongest ready-to-ship, quotable content. Drop them into open calendar slots; each is high-hook and needs no external research. Full takes and proof in the [POV Library](war-room-pov-library.md).
 
 | Pillar | Format | Working Title / POV | Owner | Proof Point |
 |--------|--------|---------------------|-------|-------------|
-| Paid Media Truths | LinkedIn post | "Paid media can't fix a bad product — it just makes the problem more visible" | Victor | POV 4 |
-| Paid Media Truths | Carousel | "'We want to be on every channel.' Here's why that's the wrong goal." | Victor | POV 5 |
-| Paid Media Truths | Blog + carousel | "How we'd audit a $50K/month account (we don't start by cutting spend)" | Victor | POV 6 |
-| AI, For Real | LinkedIn article | "AI should amplify your media team, not replace their judgment" | Victor / Vanessa | POV 1 |
-| AI, For Real | Carousel | "3 platform recommendations we ignored — and why" | Victor | POV 2 |
-| Programmatic | LinkedIn post | "Programmatic doesn't replace marketers — it gives them better tools at scale" | Victor | POV 3 |
+| Paid Media Truths | LinkedIn post | "Paid media can't fix a bad product — it just makes the problem more visible" | Performance Lead | POV 4 |
+| Paid Media Truths | Carousel | "'We want to be on every channel.' Here's why that's the wrong goal." | Performance Lead | POV 5 |
+| Paid Media Truths | Blog + carousel | "How we'd audit a $50K/month account (we don't start by cutting spend)" | Performance Lead | POV 6 |
+| AI, For Real | LinkedIn article | "AI should amplify your media team, not replace their judgment" | Performance Lead / AI Lead | POV 1 |
+| AI, For Real | Carousel | "3 platform recommendations we ignored — and why" | Performance Lead | POV 2 |
+| Programmatic | LinkedIn post | "Programmatic doesn't replace marketers — it gives them better tools at scale" | Performance Lead | POV 3 |
 
 **Signature quote to build a hook around:** *"Great marketing scales success — it doesn't create it."* (POV 4)
 
@@ -132,10 +132,10 @@ These come straight from Victor's deep responses and are the strongest ready-to-
   1. Carousel: "Impressions ≠ measurement" (5 slides)
   2. Short post: the one DOOH metric clients always miss
   3. Newsletter section: framework walkthrough
-  4. Reel/short: 60-sec explainer with Kevan
+  4. Reel/short: 60-sec explainer with Measurement Lead
 - Speaking abstract: "Measuring the Unmeasurable: Attribution for DOOH" (INBOUND / The Gathering)
 - Proof point: BC Parks DOOH results
-- Spokesperson: Kevan
+- Spokesperson: Measurement Lead
 ```
 
 ---
@@ -162,13 +162,13 @@ These come straight from Victor's deep responses and are the strongest ready-to-
 ---
 
 ## 9. Open Questions to Confirm With the Team
-1. Confirm spokesperson roles (Kevan / Kirstie / Vanessa) and topic ownership.
+1. Confirm spokesperson role assignments and topic ownership.
 2. Are SkiBig3 and BC Parks cleared for public case studies (names, data)?
 3. Which DOOH measurement numbers can be shared externally?
 4. Target events list (Canada + SF/Bay Area) for the next 6 months?
 5. Can we name specific platform-recommendation misfires (Meta creative, TikTok pause) publicly, or keep them anonymized?
 6. Which market should lead each cluster — Canadian agency perspective, SF / Bay Area tech-and-growth audience, or both?
-7. Confirm Victor is comfortable being a named byline on the Paid Media Truths POVs.
+7. Confirm which team lead (if any) will be the named byline; default byline is War Room.
 
 > **Next step:** Once these are confirmed, hand this calendar to the
 > [Content Creator](../marketing/marketing-content-creator.md) for production and the

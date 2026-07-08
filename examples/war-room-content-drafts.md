@@ -1,8 +1,8 @@
-# War Room — Content Drafts (Victor's Deep-POV Clusters)
+# War Room — Content Drafts (Deep-POV Clusters)
 
 > **What this is:** Ready-to-publish copy for the six Paid Media Truths / AI clusters drawn from
-> Victor's deep-response survey. Written in the house voice defined in the
-> [POV Library & Voice Guide](war-room-pov-library.md). Byline: **Victor**.
+> the team's deep-response survey. Written in the house voice defined in the
+> [POV Library & Voice Guide](war-room-pov-library.md). Byline: **War Room** (or the relevant team lead).
 >
 > **Before publishing:** fill the `[bracketed]` placeholders with a real metric/example, and clear
 > any named client or platform anecdote (see open questions in the
@@ -11,7 +11,7 @@
 ---
 
 ## Cluster 1 · POV 4 — "Paid media can't fix a bad product"
-**Format:** LinkedIn post (Victor) · **Pillar:** Paid Media Truths
+**Format:** LinkedIn post · **Pillar:** Paid Media Truths
 
 > Paid media can't fix a bad product.
 >
@@ -27,7 +27,7 @@
 >
 > Before you raise the budget, ask the uncomfortable question first: is the thing we're advertising actually good?
 >
-> — Victor, War Room
+> — War Room
 >
 > *What's the fastest "the ads exposed the real problem" story you've seen? 👇*
 
@@ -36,7 +36,7 @@
 ---
 
 ## Cluster 2 · POV 5 — "'We want to be on every channel'"
-**Format:** Carousel (Victor) · **Pillar:** Paid Media Truths
+**Format:** Carousel · **Pillar:** Paid Media Truths
 
 **Slide 1 (hook):**
 "We want to be on every channel."
@@ -67,14 +67,14 @@ You need to be on the right ones, doing the right job, funded well enough to mat
 **Slide 7 (CTA):**
 Invest where it creates value — not just where you can plant a flag.
 Follow War Room for more no-BS paid media takes.
-— Victor
+— War Room
 
 **Derivatives:** condense slides 3–6 into a single text LinkedIn post.
 
 ---
 
 ## Cluster 3 · POV 6 — "How we'd audit a $50K/month account"
-**Format:** Blog post + carousel (Victor) · **Pillar:** Paid Media Truths
+**Format:** Blog post + carousel · **Pillar:** Paid Media Truths
 
 ### Blog draft
 
@@ -103,7 +103,7 @@ Here's the part most audits miss: **the goal isn't to cut spend. It's to realloc
 
 If your last "optimization" was mostly a spreadsheet full of pauses, you didn't audit the account. You trimmed it. There's a difference.
 
-— Victor, War Room
+— War Room
 
 ### Carousel version
 1. Give us a $50K/mo account. Here's what we fix first. (Hint: not the budget.) →
@@ -111,12 +111,12 @@ If your last "optimization" was mostly a spreadsheet full of pauses, you didn't 
 3. Get context first: goals · attribution · journey · history · channel contribution.
 4. Then hunt the waste: misaligned campaigns, overlapping audiences, wrong channels, non-incremental spend.
 5. The move isn't to cut. It's to reallocate to the highest return.
-6. Trimming ≠ auditing. Follow War Room. — Victor
+6. Trimming ≠ auditing. Follow War Room.
 
 ---
 
 ## Cluster 4 · POV 1 — "AI should amplify your media team, not replace their judgment"
-**Format:** LinkedIn article (Victor / Vanessa) · **Pillar:** AI, For Real
+**Format:** LinkedIn article · **Pillar:** AI, For Real
 
 **Title:** AI should amplify your media team — not replace their judgment
 
@@ -139,14 +139,14 @@ AI should amplify expertise, not replace it. The teams that win with AI aren't t
 
 Amplify the thinking. Don't outsource it.
 
-— Victor, War Room
+— War Room
 
 **Derivatives:** "AI can identify patterns — it doesn't understand your business" as a quote-graphic; short post version of the three "in practice" bullets.
 
 ---
 
 ## Cluster 5 · POV 2 — "3 platform recommendations we ignored (and why)"
-**Format:** Carousel (Victor) · **Pillar:** AI, For Real
+**Format:** Carousel · **Pillar:** AI, For Real
 
 **Slide 1 (hook):**
 3 platform recommendations we ignored last quarter — and why. →
@@ -177,14 +177,14 @@ Let them inform decisions. Don't let them make them.
 
 **Slide 7 (CTA):**
 Human judgment is still the job.
-Follow War Room. — Victor
+Follow War Room.
 
 **Derivatives:** single-image "warning label" graphic; text post listing the three ignored recs.
 
 ---
 
 ## Cluster 6 · POV 3 — "Programmatic doesn't replace marketers"
-**Format:** LinkedIn post (Victor) · **Pillar:** Programmatic in Practice
+**Format:** LinkedIn post · **Pillar:** Programmatic in Practice
 
 > "Programmatic is all about automation and AI making the best decisions."
 >
@@ -202,7 +202,7 @@ Follow War Room. — Victor
 >
 > The tools got better. The thinking still has to be yours.
 >
-> — Victor, War Room
+> — War Room
 
 **Derivatives:** "The tools got better. The thinking still has to be yours." quote-graphic.
 

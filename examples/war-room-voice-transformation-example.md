@@ -10,7 +10,7 @@
 ---
 
 ## Step 0 · The raw input
-The unedited survey answer (Victor, Round 2 — *"one uncomfortable truth about paid media performance"*):
+The unedited survey answer (Round 2 survey — *"one uncomfortable truth about paid media performance"*):
 
 > "One uncomfortable truth is that paid media can't fix a bad product, a weak offer, or a poor
 > customer experience. Paid media doesn't create value, but amplifies what's already there. If a
@@ -26,7 +26,7 @@ Strong thinking — but as-is it's a paragraph, not a post. Here's the pipeline.
 ## Step 1 · Find the tension
 *What belief is the respondent pushing against?*
 
-The unspoken assumption in most "our ads aren't working" conversations: **that more/better advertising is the fix.** Victor's pushing against the idea that paid media *creates* results.
+The unspoken assumption in most "our ads aren't working" conversations: **that more/better advertising is the fix.** The answer pushes against the idea that paid media *creates* results.
 
 ## Step 2 · Write the antithesis ("not X — Y")
 The answer already contains two:
@@ -80,7 +80,7 @@ Closer: **"Great marketing scales success. It doesn't create it."**
 >
 > Before you raise the budget, ask the harder question first: is the thing we're advertising actually good?
 >
-> — Victor, War Room
+> — War Room
 >
 > *What's the fastest "the ads exposed the real problem" story you've seen? 👇*
 
@@ -95,7 +95,7 @@ Closer: **"Great marketing scales success. It doesn't create it."**
 
 ### C · Quote graphic
 > **"Great marketing scales success. It doesn't create it."**
-> — Victor, War Room
+> — War Room
 
 ### D · Speaking-abstract seed (panel / podcast)
 > *Why "our ads aren't working" is usually the wrong diagnosis* — a practitioner's case for auditing the offer before the budget, and what paid media can and can't do for a brand.
