@@ -145,7 +145,7 @@ These come straight from Victor's deep responses and are the strongest ready-to-
 - **Primary channel:** LinkedIn (company page + the three named experts' personal profiles).
 - **Cascade:** Each pillar piece → carousel → short post → newsletter → short video. (6x reuse per deep idea.)
 - **Cadence:** 2–3 posts/week; 1 case study and 1 newsletter per month.
-- **Watch & learn from:** Brainlabs and StackAdapt (cited as strong competitor content) — match their depth, beat them on proof and Canadian-market specificity.
+- **Watch & learn from:** Brainlabs and StackAdapt (cited as strong competitor content) — match their depth, beat them on proof and Canadian / SF-market specificity.
 - **Inputs to monitor:** Google Trends + Neil Patel for timely angles; AI platform releases for the "AI, For Real" pillar.
 
 ---
@@ -157,7 +157,7 @@ These come straight from Victor's deep responses and are the strongest ready-to-
 | The Gathering | Speaking (with SkiBig3) | Anchor Q3 calendar; pre-promo → live → recap |
 | INBOUND | Should attend | Pitch "AI in media ops" + DOOH measurement talks |
 | CMO Alliance | Should attend | Pitch DOOH measurement / programmatic capacity |
-| More Canadian events | Explore | Build a target list; prioritize speaker slots |
+| More Canadian + SF/Bay Area events | Explore | Build a target list across both markets; prioritize speaker slots |
 
 ---
 
@@ -165,9 +165,9 @@ These come straight from Victor's deep responses and are the strongest ready-to-
 1. Confirm spokesperson roles (Kevan / Kirstie / Vanessa) and topic ownership.
 2. Are SkiBig3 and BC Parks cleared for public case studies (names, data)?
 3. Which DOOH measurement numbers can be shared externally?
-4. Target Canadian events list for the next 6 months?
+4. Target events list (Canada + SF/Bay Area) for the next 6 months?
 5. Can we name specific platform-recommendation misfires (Meta creative, TikTok pause) publicly, or keep them anonymized?
-6. Is there appetite for a Brazil-market / bilingual angle given the team's network there?
+6. Which market should lead each cluster — Canadian agency perspective, SF / Bay Area tech-and-growth audience, or both?
 7. Confirm Victor is comfortable being a named byline on the Paid Media Truths POVs.
 
 > **Next step:** Once these are confirmed, hand this calendar to the

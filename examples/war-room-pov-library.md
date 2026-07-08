@@ -18,7 +18,7 @@
 - **Anti-hype, anti-cliché** — name the wallpaper take, then say it better.
 - **Business-outcome oriented** — revenue and incremental value over vanity metrics.
 - **Grounded in the work** — hands-on multi-platform buying (Google, Meta, TikTok, DV360) is the credibility.
-- **Regional edge** — Canadian primary market, with a Brazil connection through the team.
+- **Regional edge** — Canadian and San Francisco markets; speak to both a Canadian agency perspective and the SF/Bay Area tech-and-growth audience.
 
 ---
 
@@ -97,7 +97,7 @@ Each POV is written as a one-sentence take strong enough to disagree with, plus 
 ## Guardrails (carried from Round 1)
 - **Excluded topics:** vaping, gambling, regulated industries.
 - **No repetition:** the team explicitly asked us to stop recycling the same themes — force novelty.
-- **Markets:** Canada (primary); Brazil network via the team — consider regional/bilingual angles.
+- **Markets:** Canada and San Francisco / Bay Area — tailor angles and examples to both.
 
 ---
 
