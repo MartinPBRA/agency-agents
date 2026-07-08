@@ -166,7 +166,7 @@ These come straight from the Round 2 deep responses and are the strongest ready-
 2. Are SkiBig3 and BC Parks cleared for public case studies (names, data)?
 3. Which DOOH measurement numbers can be shared externally?
 4. Target events list (Canada + SF/Bay Area) for the next 6 months?
-5. Can we name specific platform-recommendation misfires (Meta creative, TikTok pause) publicly, or keep them anonymized?
+5. ✅ **Cleared** — Meta and TikTok can be named publicly in the "recommendations we ignored" content.
 6. Which market should lead each cluster — Canadian agency perspective, SF / Bay Area tech-and-growth audience, or both?
 7. Confirm which team lead (if any) will be the named byline; default byline is War Room.
 

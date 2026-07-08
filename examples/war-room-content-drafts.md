@@ -4,9 +4,9 @@
 > the team's deep-response survey. Written in the house voice defined in the
 > [POV Library & Voice Guide](war-room-pov-library.md). Byline: **War Room** (or the relevant team lead).
 >
-> **Before publishing:** fill the `[bracketed]` placeholders with a real metric/example, and clear
-> any named client or platform anecdote (see open questions in the
-> [strategy](war-room-content-calendar-strategy.md)).
+> **Before publishing:** fill the `[bracketed]` placeholders with a real metric/example. Platform
+> names (Meta, TikTok) are **cleared for public use**; still clear any named *client* story before
+> it ships (see open questions in the [strategy](war-room-content-calendar-strategy.md)).
 
 ---
 
