@@ -79,9 +79,9 @@ Four pillars cover everything the team surfaced, with built-in novelty to honor 
 | Programmatic in Practice | Kirstie | Named for operational/capacity insight |
 | AI, For Real | Vanessa | Named for forward/AI perspective |
 | Proof & Partnership | Rotating client lead (paired w/ SkiBig3) | Wins carry the relationship story |
-| Paid Media Truths | Luis | Deep, quotable POVs (R2) — technical/opinion content, not client-relationship content |
+| Paid Media Truths | Victor | Deep, quotable POVs (R2) — technical/opinion content, not client-relationship content |
 
-*(Roles are inferred from the survey's "strong insights" answers — confirm before publishing. Luis noted he is operational, not client-facing, so client-relationship content should route to an AM.)*
+*(Roles are inferred from the survey's "strong insights" answers — confirm before publishing. Victor noted he is operational, not client-facing, so client-relationship content should route to an AM.)*
 
 ---
 
@@ -108,16 +108,16 @@ Sequenced to build authority ahead of **The Gathering** (speaking, with SkiBig3)
 
 ## 5b. Round 2 — Deep-POV Clusters (Paid Media Truths)
 
-These come straight from Luis's deep responses and are the strongest ready-to-ship, quotable content. Drop them into open calendar slots; each is high-hook and needs no external research. Full takes and proof in the [POV Library](war-room-pov-library.md).
+These come straight from Victor's deep responses and are the strongest ready-to-ship, quotable content. Drop them into open calendar slots; each is high-hook and needs no external research. Full takes and proof in the [POV Library](war-room-pov-library.md).
 
 | Pillar | Format | Working Title / POV | Owner | Proof Point |
 |--------|--------|---------------------|-------|-------------|
-| Paid Media Truths | LinkedIn post | "Paid media can't fix a bad product — it just makes the problem more visible" | Luis | POV 4 |
-| Paid Media Truths | Carousel | "'We want to be on every channel.' Here's why that's the wrong goal." | Luis | POV 5 |
-| Paid Media Truths | Blog + carousel | "How we'd audit a $50K/month account (we don't start by cutting spend)" | Luis | POV 6 |
-| AI, For Real | LinkedIn article | "AI should amplify your media team, not replace their judgment" | Luis / Vanessa | POV 1 |
-| AI, For Real | Carousel | "3 platform recommendations we ignored — and why" | Luis | POV 2 |
-| Programmatic | LinkedIn post | "Programmatic doesn't replace marketers — it gives them better tools at scale" | Luis | POV 3 |
+| Paid Media Truths | LinkedIn post | "Paid media can't fix a bad product — it just makes the problem more visible" | Victor | POV 4 |
+| Paid Media Truths | Carousel | "'We want to be on every channel.' Here's why that's the wrong goal." | Victor | POV 5 |
+| Paid Media Truths | Blog + carousel | "How we'd audit a $50K/month account (we don't start by cutting spend)" | Victor | POV 6 |
+| AI, For Real | LinkedIn article | "AI should amplify your media team, not replace their judgment" | Victor / Vanessa | POV 1 |
+| AI, For Real | Carousel | "3 platform recommendations we ignored — and why" | Victor | POV 2 |
+| Programmatic | LinkedIn post | "Programmatic doesn't replace marketers — it gives them better tools at scale" | Victor | POV 3 |
 
 **Signature quote to build a hook around:** *"Great marketing scales success — it doesn't create it."* (POV 4)
 
@@ -168,7 +168,7 @@ These come straight from Luis's deep responses and are the strongest ready-to-sh
 4. Target Canadian events list for the next 6 months?
 5. Can we name specific platform-recommendation misfires (Meta creative, TikTok pause) publicly, or keep them anonymized?
 6. Is there appetite for a Brazil-market / bilingual angle given the team's network there?
-7. Confirm Luis is comfortable being a named byline on the Paid Media Truths POVs.
+7. Confirm Victor is comfortable being a named byline on the Paid Media Truths POVs.
 
 > **Next step:** Once these are confirmed, hand this calendar to the
 > [Content Creator](../marketing/marketing-content-creator.md) for production and the

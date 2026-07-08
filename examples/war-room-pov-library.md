@@ -31,38 +31,38 @@ Each POV is written as a one-sentence take strong enough to disagree with, plus 
 - **Argument:** AI speeds up analysis, idea generation, and efficiency — but the best results still come from people who understand the client's business, challenge assumptions, and interpret data in context. AI spots patterns; it doesn't understand business objectives.
 - **Contrarian hook:** *"AI can identify patterns, but it doesn't understand your business — so stop letting it make the call."*
 - **Proof:** Daily hands-on use across Google/Meta/TikTok/DV360; SkiBig3 BigQuery automation (R1).
-- **Voice:** Luis (paid), Vanessa (AI perspective).
+- **Voice:** Victor (paid), Vanessa (AI perspective).
 - **Formats:** LinkedIn article, conference/panel abstract.
 
 **POV 2 · "Platform recommendations should come with a warning label."**
 - **Argument:** Platform recs surface real opportunities and are always worth reviewing — but they're built on algorithms, not on your client's business context. They should inform decisions, not make them.
 - **Receipts:** Platforms push budget increases even at the client's ROAS target/limit; Meta suggests AI creative changes that don't fit the brand; TikTok has recommended pausing campaigns that were performing *exactly* as intended.
 - **Contrarian hook:** *"'Recommendations are based on algorithms, not on your business context.' Print it on the dashboard."*
-- **Voice:** Luis.
+- **Voice:** Victor.
 - **Formats:** Carousel ("3 platform recommendations we ignored — and why"), LinkedIn post.
 
 ### Pillar — Programmatic in Practice
 
 **POV 3 · "Programmatic isn't about replacing marketers — it's about giving them better tools to make smarter decisions at scale."**
 - **Argument:** The wallpaper take is "programmatic = automation + AI making the best decisions." Reframe: the tech is powerful, but strategy, business context, and critical thinking are what separate good campaigns from great ones.
-- **Voice:** Luis.
+- **Voice:** Victor.
 - **Formats:** LinkedIn post, explainer.
 
 ### Pillar — Paid Media Truths (No-BS)
 
 **POV 4 · "Paid media can't fix a bad product, a weak offer, or a poor customer experience."**
 - **Argument:** Paid media doesn't create value — it amplifies what's already there. Strong product + compelling offer + great CX → paid accelerates growth. Missing fundamentals → advertising just makes the problems more visible. *"Great marketing scales success; it doesn't create it."*
-- **Voice:** Luis.
+- **Voice:** Victor.
 - **Formats:** High-hook LinkedIn post, newsletter lead.
 
 **POV 5 · "'Be on every channel' is the wrong goal — be where your audience is and where you create the most business impact."**
 - **Argument:** Channel selection is a strategic decision based on audience, objectives, budget, and each channel's role in the journey. It also depends on brand maturity — a new brand may need awareness before conversion, because people buy what they already recognize and trust. Presence for its own sake is waste.
-- **Voice:** Luis / AM.
+- **Voice:** Victor / AM.
 - **Formats:** LinkedIn post, sales-enablement one-pager, discovery-call talking points.
 
 **POV 6 · "The first thing to fix on a $50K/month account isn't spend — it's decisions made on assumptions instead of data."**
 - **Argument:** Before touching tactics, understand business goals, attribution model, customer journey, historical performance, and each channel's contribution to revenue. Then find the waste — misaligned campaigns, overlapping audiences, wrong channels, non-incremental spend — and reallocate to the highest return. The goal isn't to cut; it's to reallocate.
-- **Voice:** Luis.
+- **Voice:** Victor.
 - **Formats:** "How we'd audit a $50K/mo account" blog + carousel; discovery framework.
 
 ---
@@ -80,11 +80,11 @@ Each POV is written as a one-sentence take strong enough to disagree with, plus 
 ## Spokesperson Map (updated)
 | Voice | Owns | Notes |
 |---|---|---|
-| **Luis** | Paid performance, programmatic ops, AI-in-practice, account audits | Deep, quotable POVs (R2). **Operational, not client-facing** — source for technical/opinion content, *not* "client relationship" content. |
+| **Victor** | Paid performance, programmatic ops, AI-in-practice, account audits | Deep, quotable POVs (R2). **Operational, not client-facing** — source for technical/opinion content, *not* "client relationship" content. |
 | Kevan | DOOH measurement | R1 |
 | Kirstie | Programmatic ops & capacity | R1 |
 | Vanessa | AI perspective | R1 |
-| AMs | Client-facing questions, relationship content | Luis flagged these belong to AMs, not him |
+| AMs | Client-facing questions, relationship content | Victor flagged these belong to AMs, not him |
 
 ---
 
