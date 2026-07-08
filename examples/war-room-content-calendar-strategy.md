@@ -4,7 +4,9 @@
 > *Social Calendar Plan* team survey. It shows the **Deep Response Engine** in action — taking
 > thin one-line survey answers and laddering them into a defensible, ship-ready editorial calendar.
 >
-> **Source input:** `Social Calendar Plan Responses (Form Responses 1).csv`
+> **Source input:** `Social Calendar Plan Responses` — Round 1 (agency-level) + Round 2 (deep-response form).
+> Round-2 takes are captured in the [War Room POV Library & Voice Guide](war-room-pov-library.md), which
+> is the source-of-truth for the brand's voice; the clusters below reference it.
 
 ---
 
@@ -63,6 +65,7 @@ Four pillars cover everything the team surfaced, with built-in novelty to honor 
 2. **Programmatic in Practice** — capabilities, capacity, and how War Room runs accounts. *(Showcases "achievements and capacities.")*
 3. **AI, For Real** — honest takes on AI in media ops; no hype. *(The strongest internal opinion, sharpened.)*
 4. **Proof & Partnership** — case studies and client-relationship craft (SkiBig3, BC Parks). *(Answers "case studies" + "how we manage client relationships.")*
+5. **Paid Media Truths (No-BS)** — sharp, defensible opinions on paid performance. *(Powered by Round 2's deep responses — see the [POV Library](war-room-pov-library.md).)*
 
 **Exclusions honored throughout:** no vaping/gambling/regulated-industry content; force novelty so pillars don't recycle the same three posts.
 
@@ -76,8 +79,9 @@ Four pillars cover everything the team surfaced, with built-in novelty to honor 
 | Programmatic in Practice | Kirstie | Named for operational/capacity insight |
 | AI, For Real | Vanessa | Named for forward/AI perspective |
 | Proof & Partnership | Rotating client lead (paired w/ SkiBig3) | Wins carry the relationship story |
+| Paid Media Truths | Luis | Deep, quotable POVs (R2) — technical/opinion content, not client-relationship content |
 
-*(Roles are inferred from the survey's "strong insights" answer — confirm before publishing.)*
+*(Roles are inferred from the survey's "strong insights" answers — confirm before publishing. Luis noted he is operational, not client-facing, so client-relationship content should route to an AM.)*
 
 ---
 
@@ -99,6 +103,23 @@ Sequenced to build authority ahead of **The Gathering** (speaking, with SkiBig3)
 | 10 | DOOH | LinkedIn article | "Programmatic DOOH: the buyer's measurement checklist" | Kevan | Framework | CMO Alliance pitch |
 | 11 | AI, For Real | Carousel | "5 things we automated so strategists could strategize" | Vanessa | BigQuery | — |
 | 12 | Programmatic | Quarter wrap | "What we learned running [n] campaigns this quarter" | Team | Internal | — |
+
+---
+
+## 5b. Round 2 — Deep-POV Clusters (Paid Media Truths)
+
+These come straight from Luis's deep responses and are the strongest ready-to-ship, quotable content. Drop them into open calendar slots; each is high-hook and needs no external research. Full takes and proof in the [POV Library](war-room-pov-library.md).
+
+| Pillar | Format | Working Title / POV | Owner | Proof Point |
+|--------|--------|---------------------|-------|-------------|
+| Paid Media Truths | LinkedIn post | "Paid media can't fix a bad product — it just makes the problem more visible" | Luis | POV 4 |
+| Paid Media Truths | Carousel | "'We want to be on every channel.' Here's why that's the wrong goal." | Luis | POV 5 |
+| Paid Media Truths | Blog + carousel | "How we'd audit a $50K/month account (we don't start by cutting spend)" | Luis | POV 6 |
+| AI, For Real | LinkedIn article | "AI should amplify your media team, not replace their judgment" | Luis / Vanessa | POV 1 |
+| AI, For Real | Carousel | "3 platform recommendations we ignored — and why" | Luis | POV 2 |
+| Programmatic | LinkedIn post | "Programmatic doesn't replace marketers — it gives them better tools at scale" | Luis | POV 3 |
+
+**Signature quote to build a hook around:** *"Great marketing scales success — it doesn't create it."* (POV 4)
 
 ---
 
@@ -145,6 +166,9 @@ Sequenced to build authority ahead of **The Gathering** (speaking, with SkiBig3)
 2. Are SkiBig3 and BC Parks cleared for public case studies (names, data)?
 3. Which DOOH measurement numbers can be shared externally?
 4. Target Canadian events list for the next 6 months?
+5. Can we name specific platform-recommendation misfires (Meta creative, TikTok pause) publicly, or keep them anonymized?
+6. Is there appetite for a Brazil-market / bilingual angle given the team's network there?
+7. Confirm Luis is comfortable being a named byline on the Paid Media Truths POVs.
 
 > **Next step:** Once these are confirmed, hand this calendar to the
 > [Content Creator](../marketing/marketing-content-creator.md) for production and the
