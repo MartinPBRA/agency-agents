@@ -179,6 +179,35 @@ Built directly from [`war-room-survey-responses.md`](war-room-survey-responses.m
 
 **Quote graphic:** *"The tools got faster. The judgment is still the job."*
 
+### H2 · Deeper cut (long-form / LinkedIn article)
+Same survey-grounded spine, layered out with reasoning, a concrete scenario, and a client-stakes turn. Use for a LinkedIn *article* or a longer feed post; the short H version stays the quick-hit.
+> **We asked our own team where AI actually fits in the work. The answer should change how you choose an agency.**
+>
+> Not one person said "it does the job." And these are people who use AI every single day — across Google, Meta, TikTok, DV360. This isn't a team that's scared of the tools. It's a team that knows exactly what the tools are for.
+>
+> Here's what came back, almost in unison — and why each one matters more than it sounds.
+>
+> **"AI amplifies expertise. It doesn't replace it."**
+> Think of AI as the fastest junior analyst you've ever had. Tireless, instant, cheap. It can pull the patterns, spin the variations, draft the first pass in seconds. What it can't do is know *why* any of it matters to your business. It sees the pattern; it doesn't understand the objective behind it. Amplification is real. Replacement is a sales pitch.
+>
+> **"It's a variation engine, not a differentiation engine."**
+> Ask AI for 40 versions of a campaign and you'll get 40 good ones before lunch. But the winning idea usually isn't in the 40 — because every one of them optimized for the metric the platform likes, not the outcome the client actually needs. The differentiator came from a person who understood the business behind the brief. AI makes *more* of an idea. It can't make the idea worth multiplying.
+>
+> **"It optimizes what you give it. It doesn't fix what you give it."**
+> This is the dangerous one. Point AI at a weak strategy and it won't fail loudly — it'll scale the weakness, efficiently. We've seen automation chase CPL and deliver exactly that: cheaper leads, dashboards all green, everyone happy… right up until sales, CS, or finance finds the quality gap and traces it back. Unchecked automation isn't risky because it makes obvious mistakes. It's risky because it's confidently wrong, quietly, for a long time.
+>
+> And the part no tool solves: **you can't put an algorithm in a room and ask it why revenue dropped.** A person owns that. Someone you can question, challenge, and hold accountable.
+>
+> Put it together and "people-first AI" stops being a slogan. It's a deliberate division of labor: **the machine does the reps, the human owns the judgment** — the business context, the override, the accountability.
+>
+> So here's what it means for you. The tools are table stakes now; you have the same AI we do. What you're actually buying from an agency is the layer on top — the person who knows when to trust the recommendation and when to kill it, when a cheap lead is a trap, when the winning metric is winning the wrong game.
+>
+> The tools got faster. The judgment is still the job.
+>
+> — War Room
+>
+> *Ask your agency where the human actually sits in the loop. If they can't answer, you already have your answer.* 👇
+
 ---
 
 ## Supporting POVs it can pull from (same pillar)
