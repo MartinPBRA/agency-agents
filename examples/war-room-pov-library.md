@@ -8,7 +8,7 @@
 > trace back to a POV here, anchored to a proof point. Update this file as new survey rounds and
 > interviews come in — it's the "training data" for the brand's voice.
 >
-> **Sources:** Social Calendar Plan survey — Round 1 (agency-level) + Round 2 (deep-response form).
+> **Sources:** Social Calendar Plan survey — Round 1 (agency-level) + Round 2 (deep-response form) + Round 3 (three deep respondents).
 
 ---
 
@@ -100,26 +100,112 @@ Each POV is written as a one-sentence take strong enough to disagree with, plus 
 - **Voice:** Performance Lead.
 - **Formats:** "How we'd audit a $50K/mo account" blog + carousel; discovery framework.
 
+### Pillar — AI, For Real (Round 3 additions)
+
+**POV 7 · "AI is good at variation — not differentiation."**
+- **Argument:** AI speeds up the *execution* of a strong concept; it doesn't create the concept. It gives you a hundred versions of one idea, not the idea worth having a hundred versions of. The human touch on the concept isn't going away.
+- **Proof:** Creative-team practice; dynamic-creative results.
+- **Voice:** Creative / AI Lead. **Formats:** LinkedIn post, quote graphic.
+
+**POV 8 · "Automation didn't make paid media hands-off — it made strategy matter more."**
+- **Argument:** Automation made execution easier, but the brands winning have stronger first-party data, better measurement, better creative testing, and clearer objectives. *AI optimizes what you give it — it doesn't fix poor strategy or bad data.*
+- **Voice:** Measurement Lead. **Formats:** LinkedIn article.
+
+**POV 9 · "Dynamic creative isn't more assets — it's one strategy scaled."**
+- **Argument:** Cosmetic variation (colours, layouts) gives the algorithm nothing to learn from. Meaningful variation means distinct messaging, value props, and benefits for different segments and journey stages. Use it to scale a deliberate strategy, not to inflate asset counts.
+- **Voice:** Creative / Programmatic Lead. **Formats:** carousel, explainer.
+
+**POV 10 · "Test before you trust."**
+- **Argument:** "Always follow platform recommendations" is the trap — recs maximize *platform* performance, not *business* performance. Auto-apply, broad expansion, and aggressive automation can work, but only backed by clean data and rigorous testing. (Sharpens POV 2.)
+- **Voice:** Measurement / Performance Lead. **Formats:** quote graphic, LinkedIn post.
+
+### Pillar — Programmatic in Practice (Round 3 additions)
+
+**POV 11 · "Programmatic isn't buying impressions — it's buying probability."**
+- **Argument:** Every impression should increase the *likelihood of a business outcome*. Success isn't scale; it's whether data, creative, targeting, and measurement work together to create incremental value. Programmatic gives infrastructure for millions of real-time decisions — but those decisions are only as smart as the signals behind them; it doesn't create relevance on its own.
+- **Voice:** Programmatic Ops Lead. **Formats:** LinkedIn article, quote graphic.
+
+**POV 12 · "Don't say 'data-driven.' Name the data."**
+- **Argument:** "Data-driven targeting" describes everything from last week's first-party purchase data to a modelled lookalike — very different things. Say the specific one: *"targeting based on last week's purchase data,"* not "data-driven."
+- **Voice:** Performance Lead. **Formats:** LinkedIn post, quote graphic.
+
+**POV 13 · "It's not a funnel — it's a multi-touch path (and you're not a media buyer, you're a strategic partner)."**
+- **Argument:** Modern journeys are non-linear — discover on TikTok, search on Google, ignore retargeting, return via email, convert on branded search. Don't force channels into fixed funnel stages; understand the role each plays. Give algorithms freedom *inside* a strategy. The advertiser's job is to design the measurement, creative, audience, and business-value framework that steers automation toward the right outcome.
+- **Voice:** Programmatic Ops / Client Strategy Lead. **Formats:** LinkedIn article, carousel, speaking abstract.
+
+### Pillar — Measurement That Matters (NEW)
+
+**POV 14 · "ROAS isn't the goal — it's the floor."** *(Round 3 flagship)*
+- **Argument:** Pushing ROAS higher every year actively works *against* revenue growth. The unlock: model what a business number everyone already agrees on (e.g. lodging revenue) does at different budget tiers — plus LTV and new-customer acquisition — and trend it over time. Then ROAS stops being the target and becomes the minimum requirement for profitability, while benchmarks move to growth segments.
+- **Proof:** SkiBig3 KPI reframe — budget-tier → lodging-revenue / LTV modelling.
+- **Voice:** Measurement / Client Strategy Lead. **Formats:** blog + carousel, speaking abstract. *(Highest-value story in the set.)*
+
+**POV 15 · "Last-click gives the credit — it doesn't tell you what was incremental."**
+- **Argument:** Attribution models are flawed and most brands aren't running incrementality testing. Last click can't show what would have happened organically. If you're not testing incrementality, you're guessing which spend actually caused the outcome.
+- **Voice:** Measurement Lead. **Formats:** LinkedIn post, explainer.
+
+**POV 16 · "Stop optimizing to platform metrics."**
+- **Argument:** CTR, CPC, impressions, and even ROAS tell part of the story. Look first at pipeline, revenue, CAC, incrementality, and LTV. Too many teams celebrate campaign metrics while missing whether marketing is growing the business. *("How do we know our marketing is actually working?" is the real client question.)*
+- **Voice:** Measurement Lead. **Formats:** LinkedIn post, board-metrics guide, $50K-audit tie-in.
+
+**POV 17 · "Ad platforms report clicks — not foot traffic."**
+- **Argument:** Especially for tourism/destination brands: platforms report on-platform actions, not visitation, hotel occupancy, or visitor counts — unless someone builds the bridge (geo-conversion data, visitation studies, matching campaign timing to destination-level visitor data). The question isn't unanswerable; it just takes work outside standard reporting.
+- **Voice:** Measurement / Client Strategy Lead. **Formats:** case study, explainer. *(Strong niche POV given the tourism client concentration.)*
+
+### Pillar — Paid Media Truths (Round 3 additions)
+
+**POV 18 · "Most paid media problems aren't media problems."**
+- **Argument:** Weak creative, poor conversion experiences, unclear positioning, slow sites, broken CRM processes, or unrealistic expectations usually outweigh campaign optimization. Paid media amplifies the strengths *and* weaknesses of the entire customer journey. (Extends POV 4.)
+- **Voice:** Any lead. **Formats:** high-hook LinkedIn post, quote graphic.
+
+**POV 19 · "I'd rather dominate two channels than underperform on eight."**
+- **Argument:** Every channel has a learning curve, creative requirements, measurement complexity, and budget needs. Spread too thin and nothing gets enough data to optimize. Start where the audience is, prove what works, expand strategically — because it contributes to outcomes, not because a platform exists. *"The question isn't which channels you can be on — it's which you can fund well enough to move the number."* (Sharpens POV 5.)
+- **Voice:** Performance Lead. **Formats:** carousel, LinkedIn post.
+
+**POV 20 · "Cheaper leads aren't better leads."**
+- **Argument:** Unchecked automation optimizes toward CPL and delivers exactly that — cheaper leads. Everything looks good on paper until someone downstream (sales, CS, finance) finds the quality gap and traces it back. That's what makes unchecked automation riskier than a normal mistake: it fails *quietly*.
+- **Proof:** Lead-quality / CPL account story.
+- **Voice:** Performance / Measurement Lead. **Formats:** LinkedIn post, cautionary explainer.
+
+**POV 21 · "Brand campaigns aren't wasted spend — they're territory defense."**
+- **Argument:** "Why pay for people already searching my brand?" Because brand campaigns protect visibility from competitors, control messaging and landing pages, support promos, capture high-intent demand, and reveal how branded demand shifts over time. *(Colorful proof available — a competitor brand-keyword takeover that spoiled a rival's launch day. Verify comfort/accuracy before public use.)*
+- **Voice:** Performance Lead. **Formats:** LinkedIn post, story-driven.
+
+### Pillar — AI & Search / SGE (NEW)
+
+**POV 22 · "Don't wait for AI Overviews to eat your search share — show up in them first."**
+- **Argument:** AI Overviews are already pulling search share (per Alphabet's earnings), and even Google hasn't fully solved the business model. Clients rightly have no clear POV yet. The move isn't to panic — it's to get set up to appear in AI/generative results (organically and via paid where possible) before it costs you traffic.
+- **Voice:** Measurement / Technical Lead. **Formats:** LinkedIn article, webinar, speaking abstract. *(Timely — high demand in client questions.)*
+
 ---
 
 ## Proof Point Library (running)
-- **SkiBig3** — BigQuery reporting automation (R1).
+- **SkiBig3** — BigQuery reporting automation (R1); **KPI reframe: ROAS-as-floor, budget-tier → lodging-revenue / LTV modelling (R3, flagship)**; BigQuery "Kedet" intelligence integration & Dynamic Audience framework (R3).
 - **BC Parks** — DOOH case study (R1).
+- **Invest Vancouver** — World Cup audience wrap-up (R3).
+- **Vancouver Whitecaps** — reaching Fan Fest attendees (R3).
+- **Inn at Laurel Point** — "Travel Local, Stay Local" revenue lift off a US travel-policy shift (R3).
+- **Lead-quality / CPL story** — automation delivering cheap, low-value leads until downstream teams found the gap (R3).
 - **Multi-platform buying** — Google, Meta, TikTok, DV360 (R2).
 - **Platform-recommendation misfires** — Meta off-brand creative suggestions; TikTok "pause a winning campaign" rec (R2).
+- **Brand-keyword takeover** — competitor brand-term takeover that spoiled a rival's product launch (R3, personal anecdote — verify before public use).
 
 *Rule: no POV publishes without one of these (or a new, cleared) proof point attached.*
+*⚠️ Client names (SkiBig3, Invest Vancouver, Whitecaps, Inn at Laurel Point, BC Parks) need per-client public clearance before they appear in published content.*
 
 ---
 
 ## Spokesperson Map (updated)
 | Voice | Owns | Notes |
 |---|---|---|
-| **Performance Lead** | Paid performance, programmatic ops, AI-in-practice, account audits | Deep, quotable POVs (R2). **Operational, not client-facing** — source for technical/opinion content, *not* "client relationship" content. |
-| Measurement Lead | DOOH measurement | R1 |
-| Programmatic Ops Lead | Programmatic ops & capacity | R1 |
-| AI Lead | AI perspective | R1 |
-| AMs | Client-facing questions, relationship content | Performance Lead these belong to AMs, not the performance team |
+| **Performance Lead** | Paid performance, programmatic ops, AI-in-practice, account audits, lead quality | Deep, quotable POVs (R2/R3). **Operational, not client-facing** — source for technical/opinion content, *not* "client relationship" content. |
+| Measurement / Technical Lead | Technical marketing, analytics, AI, measurement, incrementality, data infrastructure (BigQuery, GA4/server-side) | R1/R3 — the deepest technical voice; owns Measurement That Matters + AI & Search. |
+| Programmatic Ops Lead | Programmatic ops, capacity, signal/creative frameworks | R1/R3 |
+| Client Strategy Lead | Client strategy, retention, account growth, real-world client challenges | R3 — best voice for reframe/relationship stories (e.g., the ROAS-as-floor narrative). |
+| AI / Creative Lead | AI-in-creative, dynamic creative strategy | R1/R3 |
+| Sales team | Objections, market trends, buying behaviour, competitive insights | R3 — content source |
+| CX team | Implementation learnings, optimization, customer-success stories | R3 — content source |
+| AMs | Client-facing questions, relationship content | Client-relationship content routes here, not to the performance team |
 
 ---
 
@@ -152,10 +238,42 @@ Use this every time a new response comes in — it keeps the respondent's real o
 
 ---
 
-## Guardrails (carried from Round 1)
+## Guardrails
 - **Excluded topics:** vaping, gambling, regulated industries.
 - **No repetition:** the team explicitly asked us to stop recycling the same themes — force novelty.
 - **Markets:** Canada and San Francisco / Bay Area — tailor angles and examples to both.
+- **Vertical strength:** notable concentration of **tourism / destination** clients (SkiBig3, Invest Vancouver, Whitecaps, Inn at Laurel Point) — lean into travel/visitation angles where relevant.
+- **Content principle (R3):** *publish evidence, not opinions.* The competitor content the team admires wins on original research, benchmarks, and experiments — back every strong take with data, not just conviction.
+- **Client clearance:** confirm per-client before any named client story ships (see Proof Point Library).
+
+---
+
+## Sources & Voices We Track (R3)
+Use these to source timely angles and to sanity-check takes.
+- **Industry news:** AdExchanger · Marketing Brew · Search Engine Land · Search Engine Journal · Digiday · The Drum · Adweek · Think with Google · r/PPC · IAB Tech Lab · Google/Meta/Microsoft ad docs.
+- **AI & Search:** OpenAI · Anthropic · Google AI Blog · Perplexity · Google Search Central · SEOFOMO · SparkToro.
+- **Measurement & data:** Measure Slack · CXL · Analytics Mania · BigQuery release notes · HubSpot.
+- **People:** Avinash Kaushik · Rand Fishkin · Tom Critchlow · Simo Ahava · Kieran Flanagan · Dave Gerhardt · Peep Laja · April Dunford (positioning) · Ethan Mollick · Allie K. Miller · Google Search Liaison · Ahrefs · Semrush.
+- **Content to learn from (evidence-first):** Directive (SaaS growth, data-backed) · NP Digital (research/frameworks) · Ahrefs (teaches, doesn't sell) · HubSpot (original research) · SparkToro (contrarian + evidence) · MeasureSchool / Analytics Mania (approachable technical) · Thrive (LinkedIn team video walkthroughs; podcasts) · Cosset (design) · Major Tom.
+
+---
+
+## Content Ideas Backlog (R3 — from client questions + team idea lists)
+Ready-to-develop topics; run each through the Answer → Voice pipeline.
+- Search Generative AI / AI Overviews and what they mean for paid search *(high demand)*
+- Why lead quality declines despite higher media spend
+- How BigQuery changes marketing decision-making
+- When AI helps marketers — and when it just adds noise
+- Building an outbound engine vs. simply buying leads
+- Common CRM issues that quietly hurt paid media performance
+- How to evaluate a marketing agency beyond ROAS
+- Lessons from migrating to GA4 + server-side tracking
+- Why technical marketing is becoming a competitive advantage
+- What enterprise marketers should measure in board meetings
+- Translating ad spend into actual visitation (tourism)
+- Are Performance Max / Advantage+ actually worth it?
+- First-party data in a privacy-first world
+- Why you should pay for your own brand keywords
 
 ---
 

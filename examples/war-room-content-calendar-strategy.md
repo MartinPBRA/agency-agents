@@ -59,13 +59,15 @@ Each weak input is pushed through *what specifically → why now → contrarian 
 
 ## 3. Content Pillars
 
-Four pillars cover everything the team surfaced, with built-in novelty to honor *"stop talking about the same things."*
+Seven pillars cover everything the team surfaced across three survey rounds, with built-in novelty to honor *"stop talking about the same things."*
 
 1. **DOOH, Demystified** — measurement, attribution, and where DOOH actually fits. *(Answers the top prospect question.)*
-2. **Programmatic in Practice** — capabilities, capacity, and how War Room runs accounts. *(Showcases "achievements and capacities.")*
-3. **AI, For Real** — honest takes on AI in media ops; no hype. *(The strongest internal opinion, sharpened.)*
-4. **Proof & Partnership** — case studies and client-relationship craft (SkiBig3, BC Parks). *(Answers "case studies" + "how we manage client relationships.")*
-5. **Paid Media Truths (No-BS)** — sharp, defensible opinions on paid performance. *(Powered by Round 2's deep responses — see the [POV Library](war-room-pov-library.md).)*
+2. **Programmatic in Practice** — capabilities, capacity, signal/creative frameworks, and how War Room runs accounts. *(Showcases "achievements and capacities.")*
+3. **AI, For Real** — honest takes on AI in media ops and creative; no hype. *(The strongest internal opinion, sharpened.)*
+4. **Proof & Partnership** — case studies and client-relationship craft (SkiBig3, BC Parks, Invest Vancouver, Whitecaps, Inn at Laurel Point). *(Answers "case studies" + "how we manage client relationships.")*
+5. **Paid Media Truths (No-BS)** — sharp, defensible opinions on paid performance. *(Powered by Rounds 2–3's deep responses — see the [POV Library](war-room-pov-library.md).)*
+6. **Measurement That Matters (R3)** — incrementality, attribution, business-outcome metrics over platform metrics, and translating ad spend into visitation. *(The flagship "ROAS is the floor" narrative lives here.)*
+7. **AI & Search / SGE (R3)** — AI Overviews and generative search: getting ahead of it before it eats search share. *(Timely; high client demand.)*
 
 **Exclusions honored throughout:** no vaping/gambling/regulated-industry content; force novelty so pillars don't recycle the same three posts.
 
@@ -157,6 +159,9 @@ These come straight from the Round 2 deep responses and are the strongest ready-
 | The Gathering | Speaking (with SkiBig3) | Anchor Q3 calendar; pre-promo → live → recap |
 | INBOUND | Should attend | Pitch "AI in media ops" + DOOH measurement talks |
 | CMO Alliance | Should attend | Pitch DOOH measurement / programmatic capacity |
+| BCAMA — "AI: The Biggest Shift" | Surfaced (R3) | Local AI angle; tie to AI & Search pillar |
+| Search Ads Advanced 102 (Monks GMP Bootcamp 2026) | Surfaced (R3) | Team upskilling; source technical content |
+| Sales Conference 2026 | Surfaced (R3) | See internal 2026 event doc; pitch a speaker/topic |
 | More Canadian + SF/Bay Area events | Explore | Build a target list across both markets; prioritize speaker slots |
 
 ---
