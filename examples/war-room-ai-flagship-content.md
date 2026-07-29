@@ -98,6 +98,59 @@
 
 ---
 
+## G · Sharp variants — "AI helps us, it doesn't do the job" (people angle)
+Short, punchy posts on the human-judgment theme, same house voice. Byline **War Room**.
+
+**G1 · "AI helps us. It doesn't do the job."**
+> "So… does AI just do the work now?"
+>
+> No. And the agencies telling you it does are the ones to worry about.
+>
+> AI does the reps — the analysis, the variations, the first draft. Fast, cheap, tireless.
+>
+> But it doesn't understand your business. It can't sit across from your customer. And it can't be accountable when the number moves the wrong way.
+>
+> That's a person's job. It's the part you're actually paying for.
+>
+> AI helps us. It doesn't do the job.
+
+**G2 · "AI does the reps. People make the calls."**
+> AI can generate a thousand options in a minute.
+>
+> It still can't tell you which one is right for your business.
+>
+> That gap — between *an option* and *the right call* — is the whole job. It's where the strategy lives, where the client's real goal lives, where the judgment you hired us for lives.
+>
+> AI does the reps. People make the calls.
+>
+> The day you can't tell the difference is the day you overpaid for a prompt.
+
+**G3 · Accountability**
+> You can't put an algorithm in a room and ask it why revenue dropped.
+>
+> AI will optimize confidently in the wrong direction and never once feel responsible for it. It doesn't own the outcome — it doesn't even know there is one.
+>
+> A person does. Someone you can question, challenge, and hold accountable.
+>
+> Automation is a tool. Accountability is a human. Don't confuse the two.
+
+**G4 · Judgment is the product**
+> Nobody hires an agency for its software.
+>
+> You have the same AI we do — the tools are table stakes now.
+>
+> What you're actually buying is the judgment on top of them: the person who knows when to trust the recommendation and when to override it, when a cheap lead is a trap, when the "winning" metric is winning the wrong game.
+>
+> The tool got commoditized. The judgment didn't.
+
+**G5 · Short cut (for reposts)**
+> AI can do the work. It can't do the thinking.
+> And the thinking was always the job.
+
+**Quote graphics:** *"The tool got commoditized. The judgment didn't."* · *"Automation is a tool. Accountability is a human."*
+
+---
+
 ## Supporting POVs it can pull from (same pillar)
 - **POV 7** — "AI is good at variation, not differentiation" (the seed of this take)
 - **POV 8** — "Automation didn't make paid media hands-off — it made strategy matter more"
