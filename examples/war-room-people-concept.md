@@ -1,4 +1,4 @@
-# War Room — "Hands on the Wheel" (People-First AI Concept)
+# War Room — "Human in the Loop" (People-First AI Concept)
 
 > **What this is:** A recurring content concept that puts the **humans** front and centre and casts AI
 > as the co-pilot, never the driver. It turns the brand's sharpest AI POVs into a visible, repeatable
@@ -9,11 +9,12 @@
 ## The big idea
 Everyone is automating, and we're not pretending otherwise — we use AI every day. But a tool doesn't understand your business, your customer, or your risk. People do. So the concept makes the human judgment layer the star.
 
+**Concept name:** **Human in the Loop** — the AI term, repurposed to mean *there's always a person making the call.*
 **Signature line:** *AI helps us. It doesn't do the job.*
-**Concept name:** **Hands on the Wheel** *(alternates: "Human in the Loop," "People > Prompts," "Who's Driving," "The Operators")*
+**Recurring motif:** *hands on the wheel* (use as a closer/tagline within pieces).
 
 **Mini-manifesto (for a pinned post / about section):**
-> We use AI every day. It speeds up the reps — the analysis, the variations, the execution. But it doesn't understand your business, and it can't be accountable for your growth. So here's the deal: AI does the reps, our people make the calls. Hands on the wheel, always.
+> We use AI every day. It speeds up the reps — the analysis, the variations, the execution. But it doesn't understand your business, and it can't be accountable for your growth. So here's the deal: AI does the reps, our people make the calls. There's always a human in the loop.
 
 ---
 
@@ -32,7 +33,7 @@ Everyone is automating, and we're not pretending otherwise — we use AI every d
 5. **Ask the operator** — a team member answers a real client question on camera.
 6. **Meet-the-human spotlight** — a short profile: what they own, how they think, one strong opinion.
 
-**Cadence:** one "Hands on the Wheel" piece every ~2 weeks (AI / Programmatic pillars) + a monthly team spotlight.
+**Cadence:** one "Human in the Loop" piece every ~2 weeks (AI / Programmatic pillars) + a monthly team spotlight.
 
 ---
 
@@ -84,7 +85,7 @@ This concept is built to **feature real team members** — that's the source of 
 ## How it maps to the system
 - **Pillars:** primarily **AI, For Real**; also Programmatic and Proof & Partnership.
 - **POVs it dramatizes:** 23, 8, 1, 2, 10, 20.
-- **Calendar:** drop one "Hands on the Wheel" piece into the current [sprint](war-room-30-day-sprint.md) (Week 3–4 is open for it), then run biweekly.
+- **Calendar:** drop one "Human in the Loop" piece into the current [sprint](war-room-30-day-sprint.md) (Week 3–4 is open for it), then run biweekly.
 
 ## Next step
 Confirm the **concept name** and the **real-names-vs-roles** call, and I'll produce the first two executions as finished, ready-to-shoot/publish pieces (post copy + a full video script + captions).
