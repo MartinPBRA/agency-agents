@@ -151,6 +151,36 @@ Short, punchy posts on the human-judgment theme, same house voice. Byline **War 
 
 ---
 
+## H · People-first AI (grounded in the survey responses)
+Built directly from [`war-room-survey-responses.md`](war-room-survey-responses.md) — synthesizes the team's own answers (amplify-not-replace · variation-not-differentiation · optimizes-what-you-give-it · the lead-quality gap). Byline **War Room**.
+
+**LinkedIn post**
+> We asked our own team where AI actually fits in the work.
+>
+> Not one of them said "it does the job."
+>
+> Here's what they said instead — almost in unison:
+>
+> AI amplifies expertise. It doesn't replace it. It identifies patterns; it doesn't understand your business objectives.
+>
+> It's a variation engine, not a differentiation engine. It'll hand you a hundred versions of an idea in seconds — and still can't tell you which one your business actually needs.
+>
+> And it optimizes what you give it. It doesn't fix what you give it. Point it at a weak strategy and it'll scale the weakness, efficiently: cheaper leads that look great on paper, right up until sales or finance find the quality gap.
+>
+> Every answer landed in the same place: the machine does the reps, a person makes the call.
+>
+> That's what people-first AI actually means. Not anti-AI — we use it every day. It's knowing exactly what to hand the machine, and exactly what to never hand it.
+>
+> The tools got faster. The judgment is still the job.
+>
+> — War Room
+>
+> *Ask your team the same question. The answer tells you who you're really hiring.* 👇
+
+**Quote graphic:** *"The tools got faster. The judgment is still the job."*
+
+---
+
 ## Supporting POVs it can pull from (same pillar)
 - **POV 7** — "AI is good at variation, not differentiation" (the seed of this take)
 - **POV 8** — "Automation didn't make paid media hands-off — it made strategy matter more"
