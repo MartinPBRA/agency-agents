@@ -89,8 +89,23 @@ Layer SEO onto the existing [sprint](war-room-30-day-sprint.md) without new over
 
 ---
 
+## Grounded in the May 2026 marketing audit (70/100 · SEO 68/100)
+The [audit](war-room-audit-summary.md) turns this from strategy into a prioritized fix list — and its **#1 content finding is a 6-month blog gap** (last post Nov 2025) that "undercuts the 'Advertising Institute' authority claim." That makes the [30-day sprint](war-room-30-day-sprint.md) *urgent*, not optional: consistent publishing is the single highest-leverage SEO move on the table.
+
+**Audit-driven priorities, mapped to this strategy:**
+1. **Break the blog silence this week** — the audit's two recommended posts (*"The State of Programmatic Advertising in Canada: Mid-2026"* and *"How AI is Changing Paid Media Optimization in 2026"*) map straight onto the **Programmatic** and **AI, For Real** pillars — and we already have the POVs to write them.
+2. **Competitive-comparison hub** *(new — audit gap: none exists)* — "War Room vs. an in-house team," "Managed vs. DIY paid media: a cost analysis," "How to evaluate a paid media agency: 10 questions." Captures decision-stage buyers currently lost to review sites. Folds into the **Proof & Partnership** hub. Target queries: *best paid media agency Canada 2026*, *War Room vs [Wpromote / Pilothouse / Tinuiti]*.
+3. **7 industry landing pages** *(audit: only 2 of 9 exist)* — financial services, automotive, retail, real estate, health & beauty, eCommerce, entertainment. Each ranks for *"[industry] paid media agency Canada"* and carries a vertical case study. **Travel/tourism already has a page → the tourism hub is a double-down, not a cold start.**
+4. **Practitioner-level topics** (audit: shift off 101-level content) — first-party data for cookieless, advanced Performance Max bid strategy, server-side tracking implementation. These map to the **Measurement** pillar and the survey's content backlog.
+5. **Surface proof inline** — the audit flags case-study stats missing from service pages; every hub/spoke should carry a real number (now public: 6.98x ROAS, Adidas $1.7M, 354M impressions).
+
+**Use the real, public proof points** (per audit): Google Premier Partner (top 3% Canada), Kedet (proprietary AI platform), the SCORE methodology, 6.98x ROAS, and named clients Adidas / Subway / Whitecaps / SkiBig3 — these are already on the site, so they're cleared for content.
+
+---
+
 ## Next steps
-1. **Validate demand** — pull Search Console data + keyword volumes to rank the intent map (I can pull Search Console via the connected data tools if you authorize it).
-2. **Pick the first 2 hubs** — recommend AI & Search and Measurement.
-3. **Quick technical audit** — indexing, site speed, schema, existing rankings.
-4. Hand execution specs to the [SEO Specialist](../marketing/marketing-seo-specialist.md) agent; keep this doc as the strategy source of truth.
+1. **Break the blog gap now** — the two audit posts, drawn from existing POVs (highest-leverage, this week).
+2. **Validate demand** — pull Search Console data + keyword volumes to rank the intent map (I can pull Search Console via the connected data tools if you authorize it).
+3. **Pick the first 2 hubs** — recommend **Competitive-comparison** (biggest audit gap + decision-stage intent) and **AI & Search** (timeliest).
+4. **Quick technical wins from the audit** — 301 `/about/`→`/company/`, schema markup, inline case-study stats.
+5. Hand execution specs to the [SEO Specialist](../marketing/marketing-seo-specialist.md) agent; keep this doc as the strategy source of truth.

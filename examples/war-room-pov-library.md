@@ -195,8 +195,16 @@ Each POV is written as a one-sentence take strong enough to disagree with, plus 
 - **Platform-recommendation misfires** — Meta off-brand creative suggestions; TikTok "pause a winning campaign" rec (R2).
 - **Brand-keyword takeover** — competitor brand-term takeover that spoiled a rival's product launch (R3, personal anecdote — verify before public use).
 
+### Public credentials & proof (per the [May 2026 audit](war-room-audit-summary.md) — already on the site, cleared for content)
+- **Google Premier Partner** — top 3% in Canada; multiple Google certifications.
+- **Kedet** — War Room's proprietary AI platform (hybrid agency + SaaS). *(This is the "Kedet" in the SkiBig3 integration above.)*
+- **SCORE** — proprietary methodology framework.
+- **6.98x average ROAS**; **354M impressions** across work.
+- **Adidas** — $1.7M revenue, 297M impressions · **Subway** · **Vancouver Whitecaps** · **SkiBig3**.
+
 *Rule: no POV publishes without one of these (or a new, cleared) proof point attached.*
-*⚠️ Client names (SkiBig3, Invest Vancouver, Whitecaps, Inn at Laurel Point, BC Parks) need per-client public clearance before they appear in published content.*
+*✅ The credentials and named clients above are public on warroominc.com → cleared for content.*
+*⚠️ Still needs sign-off: specific internal figures not on the site (e.g., the SkiBig3 KPI-reframe lodging-revenue / LTV numbers, BigQuery hours saved) and Invest Vancouver / Inn at Laurel Point / BC Parks named stories.*
 
 ---
 
