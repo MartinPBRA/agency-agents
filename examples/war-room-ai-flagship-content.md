@@ -72,6 +72,32 @@
 
 ---
 
+## F · Second AI post — POV 8 ("set it and forget it")
+**LinkedIn post** — a distinct AI thesis from the flagship; good as the AI pillar's follow-up.
+> Automation didn't make paid media hands-off. It made strategy the whole job.
+>
+> The most expensive phrase in paid media right now: "set it and forget it."
+>
+> Automation is real, and it works. Performance Max, Advantage+, smart bidding — execution is easier than it has ever been. That part isn't hype.
+>
+> But "easier execution" quietly got mistranslated into "hands-off." Those aren't the same thing.
+>
+> Because AI optimizes what you give it — it doesn't *fix* what you give it. Point it at clean data, strong creative, and a clear business objective and it's a rocket. Point it at bad data and a vanity KPI and it will very efficiently drive you in the wrong direction.
+>
+> The brands winning with automation didn't hand over the wheel. They have stronger first-party data, better measurement, sharper creative testing, and clearer objectives — because that's the fuel the machine actually runs on.
+>
+> So the job didn't disappear. It moved upstream. Less button-pushing, more designing the system the automation runs inside.
+>
+> Automation didn't make strategy optional. It made it the whole job.
+>
+> — War Room
+>
+> *What's the worst place you've seen "set it and forget it" quietly go wrong? 👇*
+
+**Quote graphic:** *"Automation didn't make strategy optional. It made it the whole job."*
+
+---
+
 ## Supporting POVs it can pull from (same pillar)
 - **POV 7** — "AI is good at variation, not differentiation" (the seed of this take)
 - **POV 8** — "Automation didn't make paid media hands-off — it made strategy matter more"
