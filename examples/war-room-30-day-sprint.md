@@ -24,7 +24,7 @@
 | 1 | W1 · Tue | Paid Media Truths | LinkedIn post + QG | **"Most paid media problems aren't media problems."** | Any lead | POV 18 (general) | ✍️ Draft needed |
 | 2 | W1 · Thu | Programmatic | LinkedIn article | **"Programmatic isn't buying impressions — it's buying probability."** | Programmatic Ops Lead | POV 11 | ✍️ Draft needed |
 | 3 | W2 · Tue | Measurement That Matters | LinkedIn article + carousel | **"ROAS isn't the goal — it's the floor."** *(flagship)* | Measurement / Client Strategy Lead | SkiBig3 KPI reframe ⚠️ | ✍️ Draft needed · needs cleared number |
-| 4 | W2 · Thu | AI, For Real | Carousel + QG | **"3 platform recommendations we ignored — and why."** | Performance Lead | POV 2 (Meta/TikTok ✅ cleared) | ✅ [Ready](war-room-content-drafts.md) |
+| 4 | W2 · Thu | AI, For Real | LinkedIn post + carousel + QG | **"AI is a variation engine — not a differentiation engine."** *(AI flagship)* | AI / Creative Lead | POV 23 (generic receipt) | ✅ [Ready](war-room-ai-flagship-content.md) |
 | 5 | W3 · Tue | AI & Search / SGE | LinkedIn post | **"Don't wait for AI Overviews to eat your search share — show up in them first."** | Measurement / Technical Lead | POV 22 (Alphabet earnings) | ✍️ Draft needed |
 | 6 | W3 · Thu | Paid Media Truths | Carousel + QG | **"I'd rather dominate two channels than underperform on eight."** | Performance Lead | POV 19 / POV 5 | ✅ [Ready — refresh line](war-room-content-drafts.md) |
 | 7 | W4 · Tue | Measurement That Matters | LinkedIn post | **"Last-click gives the credit — it doesn't tell you what was incremental."** | Measurement Lead | POV 15 | ✍️ Draft needed |
@@ -37,7 +37,9 @@
 
 ## Production checklist
 
-**Ready to ship now (3):** #4, #6, #8 — copy exists in the drafts/BigQuery files. #6 just needs the sharper R3 line swapped in; #8 needs a cleared BigQuery number.
+**Ready to ship now (3):** #4, #6, #8 — copy exists ([AI flagship](war-room-ai-flagship-content.md) / drafts / BigQuery). #6 just needs the sharper R3 line swapped in; #8 needs a cleared BigQuery number.
+
+**On the bench:** the "3 platform recommendations we ignored" carousel (POV 2, [ready](war-room-content-drafts.md)) was bumped by the stronger AI flagship — hold it as a fast swap-in or lead the next sprint with it.
 
 **Need drafting (5 + newsletter):** #1, #2, #3, #5, #7, newsletter. I can run each through the Answer → Voice pipeline on your go.
 
