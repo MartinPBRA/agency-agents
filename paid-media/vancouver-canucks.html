@@ -1,0 +1,833 @@
+<!doctype html>
+<html lang="en-US">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Case Study: Vancouver Canucks</title>
+<meta name="description" content="Case Study: We worked with the Vancouver Canucks to help sell season membership tickets. We were able to sell out of FSEs & exceed our goals!">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Volkhov:wght@400;700&family=Lora:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg-dark: #10131e;
+    --bg-panel: #0b0e18;
+    --text-light: #ffffff;
+    --text-muted: #939499;
+    --accent: #ff8189;
+    --accent-2: #ffb347;
+    --accent-3: #ffcc33;
+    --link: #1F95FF;
+    --body-font: 'Poppins', 'Noto Sans', system-ui, sans-serif;
+    --serif-font: 'Volkhov', 'Lora', Georgia, serif;
+  }
+  * { box-sizing: border-box; }
+  html, body { margin: 0; padding: 0; }
+  body {
+    font-family: var(--body-font);
+    background: var(--bg-dark);
+    color: var(--text-light);
+    line-height: 1.55;
+    -webkit-font-smoothing: antialiased;
+  }
+  a { color: inherit; text-decoration: none; }
+  img { max-width: 100%; height: auto; display: block; }
+  h1, h2, h3, h4 { font-family: var(--serif-font); font-weight: 700; line-height: 1.15; margin: 0 0 .5em; }
+  p { margin: 0 0 1em; }
+
+  /* Header */
+  .site-header {
+    position: absolute;
+    top: 0; left: 0; right: 0;
+    z-index: 20;
+    padding: 22px 40px;
+  }
+  .header-inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+    max-width: 1400px;
+    margin: 0 auto;
+  }
+  .logo img { height: 34px; }
+  .main-nav ul {
+    list-style: none;
+    margin: 0; padding: 0;
+    display: flex;
+    gap: 28px;
+    font-size: 13px;
+    letter-spacing: .05em;
+    font-weight: 600;
+  }
+  .main-nav a { color: #fff; padding: 6px 0; border-bottom: 2px solid transparent; transition: border-color .2s; }
+  .main-nav a:hover { border-bottom-color: #fff; }
+  .cta-button {
+    background: linear-gradient(90deg, var(--accent-2), var(--accent-3));
+    color: #10131e !important;
+    padding: 12px 24px;
+    border-radius: 40px;
+    font-weight: 700;
+    font-size: 13px;
+    letter-spacing: .05em;
+    display: inline-block;
+    transition: transform .2s, box-shadow .2s;
+  }
+  .cta-button:hover { transform: translateY(-2px); box-shadow: 0 6px 18px rgba(255,179,71,.35); }
+
+  /* Hero */
+  .hero {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    min-height: 100vh;
+    background: #10131e;
+  }
+  .hero-left {
+    padding: 140px 80px 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background: linear-gradient(135deg, #10131e 0%, #1a1f33 100%);
+  }
+  .hero-stars { max-width: 380px; margin-bottom: 28px; opacity: .95; }
+  .hero-left h1 {
+    font-size: clamp(2.4rem, 4vw, 3.6rem);
+    margin-bottom: 32px;
+  }
+  .view-results-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 12px;
+    padding: 14px 28px;
+    border: 2px solid var(--accent);
+    border-radius: 40px;
+    color: #fff;
+    font-weight: 700;
+    font-size: 14px;
+    letter-spacing: .1em;
+    text-transform: uppercase;
+    width: fit-content;
+    transition: background .2s, color .2s;
+  }
+  .view-results-btn:hover { background: var(--accent); color: #10131e; }
+  .view-results-btn .arrow { transition: transform .2s; }
+  .view-results-btn:hover .arrow { transform: translateX(4px); }
+  .chevrons { margin-top: 60px; display: flex; flex-direction: column; gap: 6px; align-items: flex-start; }
+  .chev {
+    width: 20px; height: 6px;
+    background: var(--accent);
+    border-radius: 2px;
+    animation: chevPulse 2.4s ease-in-out infinite;
+  }
+  .chev:nth-child(2) { animation-delay: .2s; opacity: .7; }
+  .chev:nth-child(3) { animation-delay: .4s; opacity: .5; }
+  @keyframes chevPulse {
+    0%, 100% { transform: translateY(0); opacity: .5; }
+    50% { transform: translateY(4px); opacity: 1; }
+  }
+  .hero-right {
+    background: url('https://www.warroominc.com/wp-content/uploads/2021/05/WR_Canucks_thumbnail_v2-scaled-1.jpg') center/cover no-repeat;
+    min-height: 500px;
+  }
+
+  /* Sections */
+  section { padding: 90px 40px; }
+  .container { max-width: 1200px; margin: 0 auto; }
+  .container-narrow { max-width: 900px; margin: 0 auto; }
+
+  .intro {
+    background: #10131e;
+    color: #fff;
+    text-align: center;
+  }
+  .intro p { font-size: 1.15rem; color: #cbcdd6; max-width: 800px; margin: 0 auto 1.2em; }
+  .intro a { color: var(--accent); text-decoration: underline; }
+
+  /* Results */
+  .results {
+    background: linear-gradient(180deg, #10131e 0%, #171b2c 100%);
+    text-align: center;
+  }
+  .results h1 {
+    font-size: clamp(2.5rem, 5vw, 4rem);
+    color: var(--accent);
+    margin-bottom: 20px;
+  }
+  .results-lead {
+    font-size: 1.1rem;
+    color: #cbcdd6;
+    max-width: 700px;
+    margin: 0 auto 60px;
+  }
+  .stats-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 40px;
+    margin-bottom: 60px;
+  }
+  .stat h2 {
+    font-family: var(--serif-font);
+    font-size: clamp(2.5rem, 4vw, 3.4rem);
+    color: var(--accent-2);
+    margin-bottom: 8px;
+    line-height: 1;
+  }
+  .stat .stat-label {
+    font-size: .95rem;
+    font-weight: 700;
+    letter-spacing: .05em;
+    color: #fff;
+    margin-bottom: 14px;
+  }
+  .stat p {
+    font-size: .92rem;
+    color: #b0b3c0;
+  }
+
+  /* CTA banner (inline) */
+  .cta-inline {
+    background: rgba(255,255,255,.03);
+    border-radius: 20px;
+    padding: 40px;
+    text-align: center;
+    margin-top: 40px;
+  }
+  .cta-inline h3 {
+    font-size: 1.6rem;
+    margin-bottom: 20px;
+  }
+  .contact-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    background: var(--accent);
+    color: #10131e;
+    padding: 14px 28px;
+    border-radius: 40px;
+    font-weight: 700;
+    letter-spacing: .08em;
+    text-transform: uppercase;
+    font-size: 13px;
+    transition: transform .2s;
+  }
+  .contact-btn:hover { transform: translateY(-2px); }
+
+  /* How Did We Do It */
+  .how-title {
+    text-align: center;
+    background: #10131e;
+    padding: 80px 40px 20px;
+  }
+  .how-title h2 {
+    font-size: clamp(2rem, 4vw, 3rem);
+  }
+
+  .two-col {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+    align-items: center;
+  }
+  .eyebrow {
+    color: var(--accent);
+    font-size: .85rem;
+    font-weight: 700;
+    letter-spacing: .18em;
+    text-transform: uppercase;
+    margin: 0 0 12px;
+  }
+  .section-heading {
+    font-family: var(--serif-font);
+    font-size: clamp(1.7rem, 3vw, 2.4rem);
+    line-height: 1.2;
+    margin: 0 0 20px;
+  }
+  .body-copy p {
+    color: #cbcdd6;
+    font-size: 1rem;
+  }
+
+  .video-wrapper {
+    position: relative;
+    padding-top: 56.25%;
+    border-radius: 12px;
+    overflow: hidden;
+    background: #000;
+  }
+  .video-wrapper iframe {
+    position: absolute; inset: 0;
+    width: 100%; height: 100%;
+    border: 0;
+  }
+
+  /* Timeline */
+  .timeline {
+    padding: 80px 40px;
+    background: #10131e;
+  }
+  .timeline-track {
+    position: relative;
+    max-width: 900px;
+    margin: 0 auto;
+  }
+  .timeline-track::before {
+    content: '';
+    position: absolute;
+    left: 50%; top: 0; bottom: 0;
+    width: 3px;
+    background: rgba(255, 129, 137, 0.25);
+    transform: translateX(-50%);
+  }
+  .tl-item {
+    position: relative;
+    width: 50%;
+    padding: 30px 40px;
+  }
+  .tl-item.left { text-align: right; }
+  .tl-item.right { margin-left: 50%; text-align: left; }
+  .tl-icon {
+    position: absolute;
+    top: 30px;
+    width: 48px; height: 48px;
+    border-radius: 50%;
+    background: var(--accent);
+    color: #10131e;
+    display: flex; align-items: center; justify-content: center;
+    font-size: 20px;
+    z-index: 2;
+  }
+  .tl-item.left .tl-icon { right: -24px; }
+  .tl-item.right .tl-icon { left: -24px; }
+  .tl-card {
+    background: rgba(255,255,255,.04);
+    border: 1px solid rgba(255,255,255,.08);
+    padding: 24px;
+    border-radius: 12px;
+  }
+  .tl-card h4 {
+    font-family: var(--body-font);
+    font-size: 1.1rem;
+    font-weight: 700;
+    margin-bottom: 10px;
+    color: var(--accent-2);
+  }
+  .tl-card p { color: #cbcdd6; font-size: .95rem; margin: 0; }
+
+  /* Recommendations copy block */
+  .body-block {
+    background: #10131e;
+    padding: 40px 40px 80px;
+  }
+  .body-block .container-narrow p {
+    color: #cbcdd6;
+    font-size: 1.05rem;
+  }
+
+  /* Talk-to-us CTA */
+  .cta-band {
+    background: linear-gradient(135deg, #1a1f33, #10131e);
+    padding: 80px 40px;
+    text-align: center;
+  }
+  .cta-band h3 {
+    font-size: clamp(1.6rem, 3vw, 2.2rem);
+    margin-bottom: 26px;
+  }
+
+  /* Ad gallery */
+  .ad-hero { padding: 60px 40px 20px; }
+  .ad-hero img { border-radius: 12px; margin: 0 auto; box-shadow: 0 8px 30px rgba(0,0,0,.4); }
+  .ad-pair {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+    padding: 40px 40px 80px;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  .ad-pair img { border-radius: 12px; box-shadow: 0 8px 30px rgba(0,0,0,.4); }
+
+  /* Conclusion */
+  .conclusion {
+    background: #0b0e18;
+  }
+
+  /* Testimonial */
+  .testimonial {
+    padding: 80px 40px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  .testimonial-photo {
+    text-align: center;
+    position: relative;
+  }
+  .testimonial-photo img.headshot {
+    border-radius: 12px;
+    max-width: 380px;
+    margin: 0 auto 20px;
+  }
+  .testimonial-photo img.quote-mark {
+    max-width: 180px;
+    margin: 0 auto;
+    opacity: .8;
+  }
+  .testimonial-body p {
+    color: #dfe1ea;
+    font-size: 1.05rem;
+    margin-bottom: 1em;
+  }
+  .testimonial-name {
+    font-family: var(--serif-font);
+    font-size: 1.3rem;
+    color: var(--accent-2);
+    margin-top: 20px;
+    margin-bottom: 4px;
+  }
+  .testimonial-title {
+    font-size: .95rem;
+    color: #b0b3c0;
+  }
+
+  /* More case studies */
+  .more-cs {
+    padding: 80px 40px;
+    background: #10131e;
+    text-align: center;
+  }
+  .more-cs h3 {
+    font-size: 1.6rem;
+    color: #fff;
+    margin-bottom: 40px;
+    position: relative;
+    display: inline-block;
+  }
+  .more-cs h3::before,
+  .more-cs h3::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    width: 120px;
+    height: 1px;
+    background: rgba(255,255,255,.2);
+  }
+  .more-cs h3::before { right: 100%; margin-right: 20px; }
+  .more-cs h3::after { left: 100%; margin-left: 20px; }
+  .cs-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  .cs-card {
+    overflow: hidden;
+    border-radius: 12px;
+    transition: transform .3s;
+  }
+  .cs-card:hover { transform: translateY(-6px); }
+  .cs-card img { width: 100%; }
+
+  /* Footer form */
+  .footer-form {
+    background: #0b0e18;
+    padding: 80px 40px;
+    position: relative;
+    border-top: 1px solid rgba(255,255,255,.08);
+  }
+  .form-inner {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+    max-width: 1200px;
+    margin: 0 auto;
+    align-items: start;
+  }
+  .form-inner .eyebrow { color: var(--accent); }
+  .form-inner h2 {
+    font-size: clamp(2rem, 4vw, 2.8rem);
+    color: #fff;
+    margin-bottom: 20px;
+  }
+  .form-inner p { color: #cbcdd6; }
+  .form-mock label { display: block; font-size: .85rem; color: #b0b3c0; margin: 12px 0 6px; }
+  .form-mock input,
+  .form-mock textarea {
+    width: 100%;
+    padding: 12px 14px;
+    border: 1px solid rgba(255,255,255,.15);
+    background: rgba(255,255,255,.05);
+    color: #fff;
+    border-radius: 8px;
+    font-family: inherit;
+    font-size: .95rem;
+  }
+  .form-mock textarea { min-height: 100px; resize: vertical; }
+  .form-mock button {
+    margin-top: 20px;
+    background: var(--accent);
+    color: #10131e;
+    border: 0;
+    padding: 14px 30px;
+    border-radius: 40px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: .08em;
+    font-size: 13px;
+    cursor: pointer;
+  }
+
+  /* Footer */
+  .site-footer {
+    background: #000;
+    color: #939499;
+    padding: 60px 40px 40px;
+  }
+  .footer-inner {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1.2fr 2fr 1fr;
+    gap: 40px;
+  }
+  .footer-left img { height: 32px; margin-bottom: 16px; }
+  .footer-left p { font-size: .85rem; color: #7a7c85; }
+  .footer-links {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+  }
+  .footer-col p { color: #fff; font-weight: 700; font-size: .85rem; letter-spacing: .1em; margin-bottom: 14px; }
+  .footer-col a { display: block; color: #939499; font-size: .82rem; font-weight: 600; letter-spacing: .06em; margin-bottom: 10px; transition: color .2s; }
+  .footer-col a:hover { color: #fff; }
+  .footer-socials { display: flex; gap: 14px; }
+  .footer-socials a {
+    width: 36px; height: 36px;
+    border-radius: 50%;
+    background: rgba(255,255,255,.08);
+    display: flex; align-items: center; justify-content: center;
+    color: #fff;
+    transition: background .2s;
+  }
+  .footer-socials a:hover { background: var(--accent); color: #10131e; }
+  .footer-socials svg { width: 18px; height: 18px; fill: currentColor; }
+
+  /* Responsive */
+  @media (max-width: 1024px) {
+    .hero { grid-template-columns: 1fr; }
+    .hero-right { min-height: 320px; order: -1; }
+    .hero-left { padding: 120px 40px 60px; }
+    .stats-grid { grid-template-columns: repeat(2, 1fr); }
+    .two-col { grid-template-columns: 1fr; }
+    .testimonial { grid-template-columns: 1fr; }
+    .cs-grid { grid-template-columns: repeat(2, 1fr); }
+    .form-inner { grid-template-columns: 1fr; }
+    .footer-inner { grid-template-columns: 1fr; }
+    .footer-links { grid-template-columns: 1fr 1fr; }
+    .main-nav { display: none; }
+  }
+  @media (max-width: 640px) {
+    section { padding: 60px 20px; }
+    .site-header { padding: 18px 20px; }
+    .hero-left { padding: 100px 20px 40px; }
+    .stats-grid { grid-template-columns: 1fr; }
+    .ad-pair { grid-template-columns: 1fr; }
+    .cs-grid { grid-template-columns: 1fr; }
+    .timeline-track::before { left: 20px; }
+    .tl-item, .tl-item.right { width: 100%; margin-left: 0; padding-left: 60px; padding-right: 0; text-align: left; }
+    .tl-item.left { text-align: left; }
+    .tl-item.left .tl-icon, .tl-item.right .tl-icon { left: -4px; right: auto; }
+    .footer-links { grid-template-columns: 1fr; }
+  }
+</style>
+</head>
+<body>
+
+<header class="site-header">
+  <div class="header-inner">
+    <div class="logo">
+      <a href="https://www.warroominc.com">
+        <img src="https://www.warroominc.com/wp-content/themes/hello-elementor-child/assets/images/warroominc-logo.svg" alt="War Room">
+      </a>
+    </div>
+    <nav class="main-nav">
+      <ul>
+        <li><a href="/platform/">OUR PLATFORM</a></li>
+        <li><a href="/our-services/">SERVICES</a></li>
+        <li><a href="/industries/">INDUSTRIES</a></li>
+        <li><a href="/case-studies">CASE STUDIES</a></li>
+        <li><a href="#">LEARN</a></li>
+        <li><a href="/company/">COMPANY</a></li>
+      </ul>
+    </nav>
+    <a href="#demo-form" class="cta-button">Book a Consult</a>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="hero-left">
+    <img class="hero-stars" src="https://www.warroominc.com/wp-content/uploads/2022/09/Employee-Handbook-Stars-v2-1024x513-1.png" alt="">
+    <h1>Case Study: Vancouver Canucks</h1>
+    <a href="#results" class="view-results-btn">
+      <span>View Results</span>
+      <span class="arrow">&rarr;</span>
+    </a>
+    <div class="chevrons">
+      <div class="chev"></div>
+      <div class="chev"></div>
+      <div class="chev"></div>
+    </div>
+  </div>
+  <div class="hero-right" aria-label="Vancouver Canucks case study visual"></div>
+</section>
+
+<section class="intro">
+  <div class="container-narrow">
+    <p>The <a href="https://www.nhl.com/canucks" target="_blank" rel="noopener">Vancouver Canucks</a> needed to greatly extend their reach at a cost per conversion for potential Season Membership holders, to boost their Full Season Equivalents (FSE).</p>
+    <p>As a secondary goal and a means to achieving the primary, the Vancouver Canucks needed to unify and economize on their advertising efforts across all channels to boost season memberships, increase brand awareness, and to reach demographics that were previously elusive.</p>
+  </div>
+</section>
+
+<section id="results" class="results">
+  <div class="container">
+    <h1>Results</h1>
+    <p class="results-lead">War Room&rsquo;s strategic digital advertising campaign achieved remarkable outcomes for CGIS:</p>
+
+    <div class="stats-grid">
+      <div class="stat">
+        <h2>44,700+</h2>
+        <div class="stat-label">Clicks</div>
+        <p>Throughout the entire campaign, we reached a total of 44,700+ clicks, which is almost 3 times what our goal was.</p>
+      </div>
+      <div class="stat">
+        <h2>2.43%</h2>
+        <div class="stat-label">Click-Through Rate</div>
+        <p>With strategic keyword planning and hands-on management and optimization, our Search Ads got a 2.43% CTR, compared to the industry average of 2%.</p>
+      </div>
+      <div class="stat">
+        <h2>100%</h2>
+        <div class="stat-label">Sold Out of Full-Season Tickets</div>
+        <p>With our omnichannel advertising approach, we were able to sell out completely of Full-Season Equivalent (FSE) tickets for the Vancouver Canucks!</p>
+      </div>
+      <div class="stat">
+        <h2>11.7</h2>
+        <div class="stat-label">Million Impressions</div>
+        <p>We exceeded our impressions goal by over 200,000. We achieved 11.7 million impressions in total for the entire campaign!</p>
+      </div>
+    </div>
+
+    <div class="cta-inline">
+      <h3>Looking to sell out tickets for your sports team events?</h3>
+      <a href="#contact" class="contact-btn">
+        <span>Contact Us Today</span>
+        <span>&rarr;</span>
+      </a>
+    </div>
+  </div>
+</section>
+
+<div class="how-title">
+  <h2>How Did We Do It?</h2>
+</div>
+
+<section>
+  <div class="container">
+    <div class="two-col">
+      <div>
+        <p class="eyebrow">The Challenge</p>
+        <h3 class="section-heading">Setting Up For The Power Play</h3>
+        <div class="body-copy">
+          <p>The biggest challenge for the Canucks was admittedly the most precise: finding their customer online, in unique mobile-moments, and getting them to convert.</p>
+          <p>How would we be able to unify the Canucks&rsquo; advertising channels effectively &ndash; left in a disorganized state by previous efforts &ndash; to determine the cross-channel experience of the user? How could we then determine exactly how the user behaved at these specific touch-points to ensure they converted?</p>
+          <p>With the prior third-party methods, another challenge was engaging in high barrier-to-entry, high-minimum services that were less effective results-wise.</p>
+          <p>Thus, we needed to maximize conversions for the Canucks&rsquo; across specific channels by economizing and unifying all of their advertising channels, leading to better brand awareness, better impressions, and better conversions on season membership sales &ndash; all with an economical ad spend on a cost per conversion model ensuring every dollar spent led to results.</p>
+        </div>
+      </div>
+      <div>
+        <div class="video-wrapper">
+          <iframe src="https://www.youtube.com/embed/XR53EUzD6cI" title="Vancouver Canucks Case Study" allowfullscreen></iframe>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="container">
+    <div class="two-col">
+      <div>
+        <p class="eyebrow">The Strategy</p>
+        <h3 class="section-heading">A Pipeline of Possibilities</h3>
+      </div>
+      <div class="body-copy">
+        <p>War Room executed a multi-pronged, data-driven strategy tailored to CGIS&rsquo;s unique needs:</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="timeline">
+  <div class="timeline-track">
+    <div class="tl-item left">
+      <div class="tl-icon">&#9992;</div>
+      <div class="tl-card">
+        <h4>Data Reconstruction</h4>
+        <p>Started from scratch as previous channel data was unavailable, employing a broad range of testing methodologies to identify the most effective channels for high conversions at specific customer touchpoints.</p>
+      </div>
+    </div>
+    <div class="tl-item right">
+      <div class="tl-icon">&#128161;</div>
+      <div class="tl-card">
+        <h4>Expansive Testing</h4>
+        <p>Conducted rigorous testing across every channel and at every level, which enhanced viewership, clicks, and conversions, significantly boosting ticket sales while maintaining cost efficiency.</p>
+      </div>
+    </div>
+    <div class="tl-item left">
+      <div class="tl-icon">&#128161;</div>
+      <div class="tl-card">
+        <h4>Channel Optimization</h4>
+        <p>Through careful cross-examination, identified underperforming channels, enabling strategic reallocation of the budget to high-performing areas and pausing less successful ones to optimize conversion rates.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="body-block">
+  <div class="container-narrow">
+    <p>At War Room, we thrive on leveraging data-backed insights to craft strategic recommendations for our clients. For future campaigns, we advise refining remarketing strategies to specifically target users who engaged with previous ads but did not convert.</p>
+    <p>By utilizing detailed data insights, we can tailor messages more closely to their interests. Additionally, implementing targeted engagement based on these insights will not only enhance ad effectiveness but also improve conversion rates, ensuring a more efficient and strategic use of the advertising budget. This approach underscores our commitment to delivering precision and performance in every campaign!</p>
+  </div>
+</section>
+
+<section class="cta-band">
+  <h3>Let&rsquo;s shoot and score with your ad campaigns.</h3>
+  <a href="#contact" class="contact-btn">
+    <span>Talk to Us Today</span>
+    <span>&rarr;</span>
+  </a>
+</section>
+
+<div class="ad-hero">
+  <img src="https://www.warroominc.com/wp-content/uploads/2017/09/1130x620-ads-canucks-1024x562.jpg" alt="Vancouver Canucks display ad collage" style="max-width:1000px;">
+</div>
+
+<div class="ad-pair">
+  <img src="https://www.warroominc.com/wp-content/uploads/2021/05/WR_Canucks-Ad-Mockup-2.jpg" alt="Vancouver Canucks Facebook ad mockup 2">
+  <img src="https://www.warroominc.com/wp-content/uploads/2021/05/WR_Canucks-Ad-Mockup-3.jpg" alt="Vancouver Canucks Facebook ad mockup 3">
+</div>
+
+<section class="conclusion">
+  <div class="container">
+    <div class="two-col">
+      <div>
+        <p class="eyebrow">Conclusion</p>
+        <h3 class="section-heading">Putting Serious Numbers On The Board</h3>
+      </div>
+      <div class="body-copy">
+        <p>With our strategies, we were able to achieve huge wins for the Canucks across all ad channels &ndash; specifically within the realms of Programmatic Display and Facebook ads. In fact: we significantly exceeded the amount of Full Season Equivalents (FSE&rsquo;s) and ticket sales projected for the Canucks for that season, and even went above and beyond the campaign goals for impressions and clicks!</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="testimonial-wrap">
+  <div class="testimonial">
+    <div class="testimonial-photo">
+      <img class="headshot" src="https://www.warroominc.com/wp-content/uploads/2023/01/WR_Canucks_Testimonial_Optimized.jpg" alt="James Liu, Digital Analyst, Canucks Sports &amp; Entertainment">
+      <img class="quote-mark" src="https://www.warroominc.com/wp-content/uploads/2021/04/WR_Whistler-Medical-Aesthetics_Testimonial_2.png" alt="">
+    </div>
+    <div class="testimonial-body">
+      <p>War Room was able to provide and exceed the amount of impressions and clicks they had projected and budgeted for &ndash; and we had hit our goal of hitting Full Season Equivalents (FSE&rsquo;s).</p>
+      <p>Even I myself just browsing the internet could find ads in ESPN, Kijiji, and that&rsquo;s when we realized wow&hellip;the reach of their display ad platform is impressive, and hit users we could never hit before. It was a big win for us.</p>
+      <p class="testimonial-name">James Liu</p>
+      <p class="testimonial-title">Digital Analyst, Canucks Sports &amp; Entertainment</p>
+    </div>
+  </div>
+</section>
+
+<section class="more-cs">
+  <h3>More case studies:</h3>
+  <div class="cs-grid">
+    <a class="cs-card" href="/the-results/whistler-medical-aesthetics/" target="_blank">
+      <img src="https://www.warroominc.com/wp-content/uploads/2021/05/WR_Whistler-Medical-Aesthetics_Recommended-Case-Study.jpg" alt="Whistler Medical Aesthetics case study">
+    </a>
+    <a class="cs-card" href="/the-results/vancouver-canucks/" target="_blank">
+      <img src="https://www.warroominc.com/wp-content/uploads/2021/05/WR_Case-Study_Canucks_Recommended-Case-Study-Canucks.png" alt="Vancouver Canucks case study">
+    </a>
+    <a class="cs-card" href="/the-results/zhi-herbals/" target="_blank">
+      <img src="https://www.warroominc.com/wp-content/uploads/2023/06/Recommended-Case-Study-Zhi-Herbals.jpg" alt="Zhi Herbals case study">
+    </a>
+    <a class="cs-card" href="/the-results/skibig3/" target="_blank">
+      <img src="https://www.warroominc.com/wp-content/uploads/2022/01/WR_Case-Study_Recommended-Case-Study_SkiBig3.jpg" alt="SkiBig3 case study">
+    </a>
+  </div>
+</section>
+
+<section id="demo-form" class="footer-form">
+  <div class="form-inner">
+    <div>
+      <p class="eyebrow"><strong>PAID MEDIA AUDIT</strong></p>
+      <h2>How&rsquo;s your paid media doing?</h2>
+      <p>Not sure if you really need a team of paid media experts? Get a free audit to see what opportunities are under your nose.</p>
+      <p><strong>Claim your free paid media audit today.</strong></p>
+    </div>
+    <form class="form-mock" onsubmit="event.preventDefault();">
+      <label for="fname">First Name</label>
+      <input id="fname" type="text" required>
+      <label for="lname">Last Name</label>
+      <input id="lname" type="text" required>
+      <label for="email">Email</label>
+      <input id="email" type="email" required>
+      <label for="company">Company</label>
+      <input id="company" type="text">
+      <label for="msg">Tell us about your goals</label>
+      <textarea id="msg"></textarea>
+      <button type="submit">Get My Free Audit &rarr;</button>
+    </form>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="footer-inner">
+    <div class="footer-left">
+      <img src="https://www.warroominc.com/wp-content/themes/hello-elementor-child/assets/images/warroominc-logo.svg" alt="War Room">
+      <p>&copy;2026 War Room Holdings, Inc.</p>
+    </div>
+    <div class="footer-links">
+      <div class="footer-col">
+        <p>DIRECTORY</p>
+        <a href="/blog/">BLOG</a>
+        <a href="/institute-library/resources/">RESOURCES</a>
+        <a href="/platform/">KEDET</a>
+        <a href="/our-services/">OUR SERVICES</a>
+        <a href="/industries/">INDUSTRIES</a>
+        <a href="/our-services/gmp-page/">GMP</a>
+      </div>
+      <div class="footer-col">
+        <p>COMPANY</p>
+        <a href="/company/">ABOUT US</a>
+        <a href="/company/#careers-at-war-room">CAREERS</a>
+        <a href="/company/#demo-form">CONTACT US</a>
+        <a href="/terms-and-conditions/">TERMS &amp; CONDITIONS</a>
+        <a href="/privacy-policy/">PRIVACY POLICY</a>
+        <a href="/sitemap.xml">SITEMAP</a>
+      </div>
+    </div>
+    <div class="footer-socials">
+      <a href="https://www.instagram.com/warroom/" aria-label="Instagram" target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24"><path d="M12 2.2c3.2 0 3.6 0 4.9.1 1.2.1 1.8.2 2.2.4.6.2 1 .5 1.4.9.4.4.7.9.9 1.4.2.4.4 1 .4 2.2.1 1.3.1 1.6.1 4.9s0 3.6-.1 4.9c-.1 1.2-.2 1.8-.4 2.2-.2.6-.5 1-.9 1.4-.4.4-.9.7-1.4.9-.4.2-1 .4-2.2.4-1.3.1-1.6.1-4.9.1s-3.6 0-4.9-.1c-1.2-.1-1.8-.2-2.2-.4-.6-.2-1-.5-1.4-.9-.4-.4-.7-.9-.9-1.4-.2-.4-.4-1-.4-2.2C2.2 15.6 2.2 15.3 2.2 12s0-3.6.1-4.9c.1-1.2.2-1.8.4-2.2.2-.6.5-1 .9-1.4.4-.4.9-.7 1.4-.9.4-.2 1-.4 2.2-.4C8.4 2.2 8.7 2.2 12 2.2M12 0C8.7 0 8.3 0 7.1.1 5.8.1 5 .3 4.2.6c-.8.3-1.5.7-2.2 1.4C1.3 2.7.9 3.4.6 4.2.3 5 .1 5.8.1 7.1 0 8.3 0 8.7 0 12s0 3.7.1 4.9c.1 1.3.2 2.1.5 2.9.3.8.7 1.5 1.4 2.2.7.7 1.4 1.1 2.2 1.4.8.3 1.6.5 2.9.5C8.3 24 8.7 24 12 24s3.7 0 4.9-.1c1.3-.1 2.1-.2 2.9-.5.8-.3 1.5-.7 2.2-1.4.7-.7 1.1-1.4 1.4-2.2.3-.8.5-1.6.5-2.9.1-1.2.1-1.6.1-4.9s0-3.7-.1-4.9c-.1-1.3-.2-2.1-.5-2.9-.3-.8-.7-1.5-1.4-2.2C21.3 1.3 20.6.9 19.8.6 19 .3 18.2.1 16.9.1 15.7 0 15.3 0 12 0zm0 5.8c-3.4 0-6.2 2.8-6.2 6.2s2.8 6.2 6.2 6.2 6.2-2.8 6.2-6.2S15.4 5.8 12 5.8zm0 10.2c-2.2 0-4-1.8-4-4s1.8-4 4-4 4 1.8 4 4-1.8 4-4 4zm6.4-11.8c-.8 0-1.5.7-1.5 1.5s.7 1.5 1.5 1.5 1.5-.7 1.5-1.5-.6-1.5-1.5-1.5z"/></svg>
+      </a>
+      <a href="https://www.youtube.com/@WarRoomInc" aria-label="YouTube" target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24"><path d="M23.5 6.2s-.2-1.6-.9-2.3c-.9-.9-1.9-.9-2.4-1C16.7 2.5 12 2.5 12 2.5s-4.7 0-8.2.4c-.5.1-1.5.1-2.4 1-.7.7-.9 2.3-.9 2.3S.3 8 .3 9.9v1.8c0 1.9.2 3.7.2 3.7s.2 1.6.9 2.3c.9.9 2.1.9 2.6 1 1.9.2 8 .3 8 .3s4.7 0 8.2-.4c.5-.1 1.5-.1 2.4-1 .7-.7.9-2.3.9-2.3s.2-1.9.2-3.7V9.9c0-1.9-.2-3.7-.2-3.7zM9.5 14.8v-6l6.1 3-6.1 3z"/></svg>
+      </a>
+      <a href="https://www.linkedin.com/company/war-room-inc-/" aria-label="LinkedIn" target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24"><path d="M20.5 2h-17C2.7 2 2 2.7 2 3.5v17c0 .8.7 1.5 1.5 1.5h17c.8 0 1.5-.7 1.5-1.5v-17c0-.8-.7-1.5-1.5-1.5zM8 19H5V9h3v10zM6.5 7.7c-1 0-1.8-.8-1.8-1.7s.8-1.7 1.8-1.7 1.7.8 1.7 1.7-.8 1.7-1.7 1.7zM19 19h-3v-5.6c0-1.4-.5-2.3-1.7-2.3-.9 0-1.5.6-1.7 1.2-.1.2-.1.5-.1.8V19h-3V9h3v1.3c.4-.6 1.1-1.5 2.7-1.5 2 0 3.5 1.3 3.5 4.1V19z"/></svg>
+      </a>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
