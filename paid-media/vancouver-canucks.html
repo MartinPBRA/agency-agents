@@ -36,25 +36,33 @@
   h1, h2, h3, h4 { font-family: var(--serif-font); font-weight: 700; line-height: 1.15; margin: 0 0 .5em; color: var(--text-dark); }
   p { margin: 0 0 1em; color: var(--text-body); }
 
+  /* Top black spacer (where header used to sit) */
+  .top-spacer {
+    background: #000;
+    height: 90px;
+    width: 100%;
+  }
+
   /* Hero */
   .hero {
     display: grid;
     grid-template-columns: 1fr 1fr;
     min-height: 90vh;
-    background: var(--bg-panel);
+    background: #000;
   }
   .hero-left {
     padding: 90px 80px;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    background: linear-gradient(135deg, #ffffff 0%, #f4f6fc 100%);
+    background: #000;
+    color: #fff;
   }
-  .hero-stars { max-width: 380px; margin-bottom: 28px; opacity: .9; filter: invert(1) hue-rotate(180deg); }
+  .hero-stars { max-width: 380px; margin-bottom: 28px; opacity: .95; }
   .hero-left h1 {
     font-size: clamp(2.4rem, 4vw, 3.6rem);
     margin-bottom: 32px;
-    color: var(--text-dark);
+    color: #fff;
   }
   .view-results-btn {
     display: inline-flex;
@@ -63,7 +71,7 @@
     padding: 14px 28px;
     border: 2px solid var(--accent);
     border-radius: 40px;
-    color: var(--accent);
+    color: #fff;
     font-weight: 700;
     font-size: 14px;
     letter-spacing: .1em;
@@ -365,12 +373,12 @@
   /* More case studies */
   .more-cs {
     padding: 80px 40px;
-    background: var(--bg-panel);
+    background: #000;
     text-align: center;
   }
   .more-cs h3 {
     font-size: 1.6rem;
-    color: var(--text-dark);
+    color: #fff;
     margin-bottom: 40px;
     position: relative;
     display: inline-block;
@@ -382,7 +390,7 @@
     top: 50%;
     width: 120px;
     height: 1px;
-    background: var(--border);
+    background: rgba(255, 255, 255, 0.2);
   }
   .more-cs h3::before { right: 100%; margin-right: 20px; }
   .more-cs h3::after { left: 100%; margin-left: 20px; }
@@ -426,6 +434,8 @@
 </style>
 </head>
 <body>
+
+<div class="top-spacer"></div>
 
 <section class="hero">
   <div class="hero-left">
